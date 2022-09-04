@@ -1,0 +1,611 @@
+.serve-qulaity-section {
+  @include flexRow(space-between, center);
+  overflow: hidden;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+
+  @include customSmallBp() {
+  }
+}
+
+.serve-quality-part-parent {
+  @include flexColumn(center, flex-start);
+  padding-left: 60px;
+
+  @include laptop() {
+    padding-left: 10px;
+  }
+
+  @include tablet() {
+    width: 80%;
+    padding-left: 0px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    width: 90%;
+  }
+
+  @include mobile() {
+    width: 100%;
+  }
+}
+
+.serve-quality-left-part {
+  position: relative;
+  @include flexRow(center, space-between);
+  @include elementSize(1800px, 620px);
+  left: -60px;
+  animation: MoveElementSerivce 1.4s 1 ease-in-out;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    padding-top: 30px;
+
+    width: unset;
+    left: -20px;
+    height: auto;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    height: unset;
+    padding-top: 60px;
+  }
+
+  @include customSmallBp() {
+  }
+}
+@keyframes MoveElementSerivce {
+  0% {
+    top: 300px;
+  }
+
+  100% {
+    top: 0px;
+
+    @include desktop() {
+    }
+  }
+}
+
+div .parallax {
+  @include largeWidthSizeMobiles() {
+    overflow-x: visible !important;
+  }
+}
+
+.self-services-image {
+  position: absolute;
+  bottom: -20px;
+  width: auto;
+  @include laptop() {
+    width: 750px;
+
+    bottom: 0px;
+    left: -150px;
+  }
+
+  @include tablet() {
+    width: 740px;
+    position: relative;
+
+    left: unset;
+    bottom: 0px;
+  }
+
+  @include mobile() {
+    width: 580px;
+
+    left: 15px;
+
+    position: relative;
+  }
+
+  @include customSmallBp() {
+    width: 450px;
+  }
+}
+
+.s-down-arrow {
+  position: relative;
+  align-self: center;
+  top: 50px;
+}
+
+.serve-quality-icons-parent {
+  @include flexColumn(space-between, center);
+  @include elementSize(auto, 300px);
+  position: relative;
+  bottom: 40px;
+  left: 217px;
+  @include laptop() {
+    height: 250px;
+
+    bottom: 16px;
+    left: 201px;
+  }
+
+  @include tablet() {
+    position: absolute;
+    bottom: unset;
+    left: unset;
+    top: 60px;
+    right: 144px;
+    height: 250px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    bottom: unset;
+    top: 47px;
+    right: 144px;
+    height: 260px;
+  }
+
+  @include mobile() {
+    right: 97px;
+    height: 200px;
+    top: 35px;
+  }
+
+  @include customSmallBp() {
+    top: 26px;
+    right: 70px;
+    height: 155px;
+  }
+}
+
+.s-skill-icon {
+  width: 90px;
+  position: relative;
+  animation: MoveElementbyPosition 2s infinite ease-in-out;
+}
+
+.s-react-icon {
+  width: 80px;
+}
+
+.s-skill-icon,
+.s-react-icon {
+  @include laptop() {
+    width: 70px;
+  }
+  @include largeWidthSizeMobiles() {
+    width: 60px;
+  }
+
+  @include mobile() {
+    width: 50px;
+  }
+
+  @include customSmallBp() {
+    width: 45px;
+  }
+}
+
+@keyframes MoveElementbyPosition {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+// -------  Offer Services  --------------------------------
+
+.offer-servcies-left-part {
+  @include flexColumn(center, flex-start);
+  width: 80%;
+
+  @include largeWidthSizeMobiles() {
+    width: 90%;
+  }
+
+  @include mobile() {
+    width: 100%;
+  }
+}
+
+.offer-servcies-section {
+  @include flexRow(space-between, center);
+
+  @include VerticalPadding(80px !important, 80px !important);
+}
+
+.services-carsds-parent {
+  @include flexRow(flex-end, null);
+  flex-wrap: wrap;
+
+  @include desktop() {
+    justify-content: space-around;
+  }
+}
+
+.cards-parent {
+  width: 300px;
+}
+
+.services-card:nth-child(2),
+.services-card:nth-child(4) {
+  @include HorizontalMargin(0 !important, 0 !important);
+
+
+  @include mobile() {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+}
+
+.services-card:nth-child(1),
+.services-card:nth-child(2),
+.services-card:nth-child(3),
+.services-card:nth-child(4) {
+  @include tablet() {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+}
+
+body div .services-card {
+  width: 330px !important;
+  padding: 35px 25px;
+  margin-bottom: 45px !important;
+  height: auto;
+  min-width: unset;
+
+  @include desktop() {
+    width: 300px !important;
+    margin-bottom: 30px !important;
+  }
+
+  @include laptop() {
+    width: 400px !important;
+  }
+
+  @include tablet() {
+    width: 310px !important;
+  }
+
+  @include largeWidthSizeMobiles() {
+    width: 480px !important;
+  }
+
+  @include mobile() {
+    width: auto !important;
+  }
+}
+
+.services-card .completed-projects {
+  display: none;
+}
+
+.services-card .cards-para {
+  margin-bottom: 0px !important;
+}
+
+// -------  Offer Services  --------------------------------
+
+.work-method-section,
+.project-cycle-heading-parent,
+.project-cycle-parent {
+  @include flexCenterColumn();
+}
+
+.project-cycle-heading-parent {
+  @include HorizontalPadding(150px, 150px);
+
+
+  @include laptop() {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  @include tablet() {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    @include HorizontalPadding(0px, 0px);
+  }
+}
+
+.project-cycle-container {
+  @include flexRow(space-between, flex-start);
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 30px;
+
+  @include desktop() {
+    flex-wrap: nowrap;
+  }
+
+  @include laptop() {
+    flex-wrap: wrap;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.project-cycle-parent {
+  position: relative;
+  @include elementSize(300px, auto);
+  @include VerticalMargin(20px, 20px);
+  @include HorizontalPadding(20px, 20px);
+
+  @include laptop() {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 400px;
+  }
+
+  @include tablet() {
+    width: 340px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    width: 250px;
+  }
+
+}
+
+.project-cycle-arrow {
+  position: absolute;
+  top: 67px;
+  right: -65px;
+
+  @include desktopSecondBpMixin() {
+    right: -65px;
+  }
+
+  @include desktopThridBpMixin() {
+    right: -43px;
+  }
+
+  @include desktop() {
+    right: -20px;
+  }
+
+  @include laptop() {
+    right: -54px;
+  }
+
+  @include tablet() {
+    right: -24px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    right: -12%;
+  }
+
+  @include mobile() {
+    top: 0;
+    right: 0;
+    position: relative;
+    transform: rotate(90deg);
+    margin: 37px 0 10px 0;
+  }
+
+}
+
+.project-cycle-img {
+  @include elementSize(150px, 150px);
+  border: 3px solid $theme-green-color;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  @include VerticalMargin(0, 25px);
+
+  &:hover {
+    background-color: $theme-green-color;
+  }
+
+  @include largeWidthSizeMobiles() {
+    @include elementSize(120px, 120px);
+  }
+
+  @include mobile() {
+    right: 0;
+    top: 0;
+  }
+
+}
+
+.requirements {
+  @include BackgroundImageServciesWorkMethod(
+    "../../assets/Services/Icons/workMethod/toDo.svg",
+    "../../assets/Services/Icons/workMethod/toDoHover.svg",
+    47%
+  );
+}
+
+.development {
+  @include BackgroundImageServciesWorkMethod(
+    "../../assets/Services/Icons/workMethod/devUpdates.svg",
+    "../../assets/Services/Icons/workMethod/devUpdatesHover.svg",
+    55%
+  );
+
+}
+
+.testing {
+  @include BackgroundImageServciesWorkMethod(
+    "../../assets/Services/Icons/workMethod/testing.svg",
+    "../../assets/Services/Icons/workMethod/testingHover.svg",
+    55%
+  );
+}
+
+.deliver {
+  @include BackgroundImageServciesWorkMethod(
+    "../../assets/Services/Icons/workMethod/deliver.svg",
+    "../../assets/Services/Icons/workMethod/deliverHover.svg",
+    75%
+  );
+
+  
+}
+
+.project-cycle-heading {
+  @include generalMedumSizeText(25px);
+  color: $white-text;
+
+  
+}
+
+.project-cycle-para {
+  @include generalText(22px);
+}
+
+.project-cycle-parent:nth-child(2) .project-cycle-arrow {
+  @include laptop() {
+    display: none !important;
+  }
+  @include mobile() {
+    display: block !important;
+  }
+}
+.project-cycle-parent:nth-child(4) .project-cycle-arrow {
+  display: none !important;
+}
+
+// ------------  Freelanicng Section ---------------
+
+.freelancing-left-content {
+  @include flexColumn(center, flex-start);
+  background-color: $theme-green-color;
+  width: 48%;
+
+
+  @include tablet() {
+    width: 80%;
+  }
+
+
+  @include mobile() {
+    width: 70%;
+  }
+
+}
+
+.freelancing-section-parent {
+  @include flexRow(space-between, center);
+  background-color: $theme-green-color;
+  padding-right: 0;
+
+  @include laptop() {
+    height: 500px;
+  }
+
+  @include tablet() {
+    margin-left: -50px;
+    flex-direction: column-reverse;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    padding: 0;
+    margin-left: -20px;
+  }
+
+}
+
+.freelancin-btn {
+  background-color: $theme-seconds-background-color;
+}
+
+.freelancin-btn:hover {
+  background-color: $white-text;
+  color: $theme-green-color;
+}
+
+.freelancing-heading span {
+
+
+  @include largeWidthSizeMobiles() {
+    font-size: 2.4rem;
+  }
+}
+
+.freelancing-heading-one,
+.freelancing-heading-two,
+.freelancing-para,
+.freelancin-btn {
+  color: $white-text;
+}
+
+.freelancing-right-img {
+  width: 50%;
+
+  @include tablet() {
+    width: 100%;
+  }
+}
+
+.freelancing-img {
+  width: 100%;
+  height: 580px;
+
+  img {
+    object-fit: contain;
+    object-position: right;
+
+  }
+
+
+  @include tablet() {
+    //
+
+    img {
+      object-fit: cover;
+      object-position: bottom;
+    }
+    height: 520px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    height: 420px;
+  }
+
+  @include mobile() {
+    height: 300px;
+  }
+
+}

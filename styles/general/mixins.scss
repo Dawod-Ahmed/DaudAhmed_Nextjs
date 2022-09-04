@@ -1,0 +1,422 @@
+@import "./variables.scss";
+
+// ------------  Mixins ---------------
+@font-face {
+  font-family: "Ethnocentric";
+  src: url(../../fonts/Ethnocentric/ethnocentric.otf);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../../fonts/Poppins/Poppins.ttf);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Hei_Reina";
+  src: url(../../fonts/hei-reina-cufonfonts/HeiReinaRegular-PKXem.ttf);
+  font-display: block;
+}
+
+@function weight($weight-name) {
+  @return map-get($font-weight, $weight-name);
+}
+
+@mixin desktopSecondBpMixin {
+  @media (max-width: $desktopSecondBp) {
+    @content;
+  }
+}
+
+@mixin desktopThridBpMixin {
+  @media (max-width: $desktopthirdBp) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+ 
+@mixin laptop {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+ 
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin largeWidthSizeMobiles {
+  @media (max-width: $largeWidthSizeMobiles) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin customSmallBp {
+  @media (max-width: $customSmallBp) {
+    @content;
+  }
+}
+
+@mixin bpskillsIcons {
+  @media (max-width: $bpskillsIcons) {
+    @content;
+  }
+}
+
+@mixin generalHeading($fontSize) {
+  // font-size: $fontSize;
+  font-size: 5rem;
+
+  color: $heading-text-color-first;
+  font-weight: weight(bold);
+  font-family: "Ethnocentric", sans-serif;
+
+  @include desktop() {
+    font-size: 4rem;
+  }
+
+  @include laptop() {
+    font-size: 3.8rem;
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    font-size: 3rem;
+  }
+
+  @include customSmallBp() {
+    
+  }
+}
+
+// 27
+@mixin generalHeadingOne($fontSize) {
+  // font-size: $fontSize;
+  font-size: 5rem;
+
+  color: $heading-text-color-second;
+  font-weight: weight(bold);
+  font-family: "Ethnocentric", sans-serif;
+
+  @include desktop() {
+    font-size: 4rem;
+  }
+
+  @include laptop() {
+    font-size: 3.8rem;
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    font-size: 3rem;
+  }
+
+  @include customSmallBp() {
+     
+  }
+}
+
+@mixin menuLinks {
+  font-size: $fontSize;
+  color: $menu-links-color;
+  font-weight: weight(medium);
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin generalText($fontSize) {
+  font-size: $fontSize;
+  font-size: 2.2rem;
+
+  color: $general-normalSize-text-color;
+  font-weight: weight(light);
+  font-family: "Poppins", sans-serif;
+
+  @include desktop() {
+    font-size: 2.1rem;
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    font-size: 2rem;
+  }
+
+  @include customSmallBp() {
+    font-size: 1.8rem;
+  }
+}
+@mixin smallText() {
+  font-size: 2rem;
+
+  font-weight: weight(light);
+  font-family: "Poppins", sans-serif;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+    font-size: 1.8rem;
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    font-size: 2rem;
+  }
+
+  @include customSmallBp() {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin generalMedumSizeText($font-size) {
+  font-size: 2.5rem;
+
+  color: $general-normalSize-text-color;
+  font-weight: weight(medium);
+  font-family: "Poppins", sans-serif;
+
+  @include desktop() {
+    font-size: 2.265rem;
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+@mixin FlexCenterRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCenterRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRow($xAxis, $yAxis) {
+  display: flex;
+  justify-content: $xAxis;
+  align-items: $yAxis;
+}
+
+@mixin flexColumn($xAxis, $yAxis) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $xAxis;
+  align-items: $yAxis;
+}
+
+@mixin themeSecondLayerView($width, $marginTop) {
+  position: relative;
+  width: $width;
+  margin-top: $marginTop;
+  background-color: $theme-seconds-background-color;
+}
+
+@mixin button {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 35px 12px 35px;
+  font-size: 2.7rem;
+  font-weight: map-get($font-weight, medium);
+  border: 2px solid $theme-green-color;
+  border-radius: 50px;
+  color: $theme-green-color;
+  transition-duration: 0.2s;
+  padding-bottom: 10px;
+
+  &:hover {
+    background-color: $button-hover-color;
+    color: $white-text;
+    box-shadow: 0px 5px 100px 5px #00da5dd6;
+    transition-duration: 0.4s;
+  }
+
+  @include desktop() {
+    padding: 8px 30px 10px 30px;
+  }
+
+  @include laptop() {
+    font-size: 2.1rem;
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+@mixin backgroundImage($Img, $imgHover, $backPosition) {
+  background-image: url($Img);
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  padding-bottom: 5px;
+  background-position: $backPosition center;
+
+  &:hover {
+    background-image: url($imgHover);
+  }
+}
+
+@mixin GeneralbackgroundImage($Img, $imgHover, $Size, $backPosition) {
+  background-image: url($Img);
+  background-repeat: no-repeat;
+  background-size: $Size;
+  background-position: $backPosition;
+
+  center &:hover {
+    background-image: url($imgHover);
+  }
+}
+
+@mixin BackgroundImageServciesWorkMethod($Img, $imgHover, $Size) {
+  background-image: url($Img);
+  background-repeat: no-repeat;
+  background-size: $Size;
+  background-position: center center;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-image: url($imgHover);
+  }
+}
+
+@mixin font($fontSize, $weight, $color, $hoverColor) {
+  font-size: $fontSize;
+  font-weight: weight($weight);
+  color: $color;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    color: $hoverColor;
+  }
+}
+
+// --------------Cards Mixins---------
+
+@mixin cardParent($width, $height) {
+  min-width: $width;
+  height: $height;
+  @include flexColumn(center, flex-start);
+  border-radius: 30px;
+  background-color: $cards-background-color;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: $cards-hover-color;
+  }
+}
+
+@mixin backgroundCardImage($Img, $imgHover) {
+  width: 110px;
+  min-height: 100px;
+  border-radius: 8px;
+  background-image: url($Img);
+  background-repeat: no-repeat;
+  background-size: 68%;
+
+  background-position: center center;
+  transition-duration: 0.2s;
+  // &:hover {
+  // background-color: $white-text;
+  // background-image: url($imgHover);
+  // }
+}
+
+@mixin card {
+  width: 350px;
+  height: 440px;
+  background-color: $cards-background-color;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: $cards-hover-color;
+    color: $white-text;
+  }
+}
+
+@mixin VerticalPadding($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin HorizontalPadding($right, $left) {
+  padding-right: $right;
+  padding-left: $left;
+}
+
+@mixin VerticalMargin($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin HorizontalMargin($right, $left) {
+  margin-right: $right;
+  margin-left: $left;
+}
+
+@mixin elementSize($width, $height) {
+  width: $width;
+  height: $height;
+}

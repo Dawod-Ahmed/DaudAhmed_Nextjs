@@ -1,0 +1,128 @@
+.footer {
+  margin: 0 auto;
+  border-top: 2px solid #373737cc;
+  background-color: $theme-seconds-background-color;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0px -13px 130px 0px #6264b1;
+  @include desktop() {
+  }
+
+  @include laptop() {
+    box-shadow: 0px -13px 80px 0px #6264b1;
+  }
+
+  @include tablet() {
+    border-radius: 0 !important;
+    box-shadow: 0px -10px 50px 0px #6264b1;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    box-shadow: 0px -10px 50px 0px #6264b1;
+  }
+  @include customSmallBp() {
+  }
+}
+.website-creator {
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    font-size: 2.6rem;
+  }
+
+  @include mobile() {
+  }
+  @include customSmallBp() {
+  }
+}
+
+.footer-icon {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  transition-duration: 0.5s;
+  @include mobile() {
+    margin: 20px 15px;
+  }
+  @include customSmallBp() {
+  }
+}
+
+.created-text {
+  color: $theme-green-color;
+  font-weight: bold;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    font-size: 1.8rem;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    font-size: 1.5rem;
+  }
+  @include customSmallBp() {
+  }
+}
+.footer-slash {
+  font-size: inherit;
+  color: $theme-green-color;
+  font-weight: bold;
+}
+
+.footer-icon-parent {
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    width: 200px;
+    flex-wrap: wrap;
+  }
+  @include customSmallBp() {
+  }
+}
+
+.github:hover {
+  background-color: #1b1f23;
+  box-shadow: 0px 0px 40px 30px #1b1f23;
+  transition-duration: 0.4s;
+}
+.facebook:hover {
+  background-color: #1b74e4;
+  box-shadow: 0px 0px 70px 8px #1b74e4;
+  transition-duration: 0.4s;
+}
+.linkdin:hover {
+  background-color: #0077b5;
+  box-shadow: 0px 0px 70px 8px #0077b5;
+  transition-duration: 0.4s;
+}
+.whatsapp:hover {
+  background-color: #35d84b;
+  box-shadow: 0px 0px 70px 8px #35d84b;
+  transition-duration: 0.4s;
+}

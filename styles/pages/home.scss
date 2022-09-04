@@ -1,0 +1,835 @@
+// ------------  Universal  Styling  ---------------
+
+// .cards-section,
+// .hero-section,
+// .h-second-sec,
+// .testimonials-section,
+// .about-me-section,
+// .experience-section,
+// .skill-section,
+// .projects-section,
+// .serve-qulaity-section,
+// .serve-qulaity-section,
+// .work-method-section,
+// .freelancing-section-parent,
+// .contact-left-content,
+// .contact-right-form,
+// .accordion-section
+
+// ------------ End  Universal  Styling    ---------------
+
+// -------------  Home Section   --------------------
+
+.hero-section {
+  @include flexCenterColumn();
+  overflow: hidden;
+  padding-bottom: 4rem !important;
+
+  @include desktop() {
+    padding-bottom: 4rem !important;
+  }
+}
+
+.hero-two-parts-parent {
+  @include flexRow(space-between, null);
+
+  @include tablet() {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.left-content-part {
+  @include flexColumn(center, flex-start);
+  max-width: 790px;
+  position: relative;
+
+  @include tablet() {
+    @include VerticalPadding(80px, 60px);
+  }
+}
+
+.welcome-txt {
+  @include generalMedumSizeText(27px);
+  font-size: 2.7rem;
+
+  animation: FadeElement 1.2s 11;
+  position: absolute;
+  top: 55px;
+}
+
+@keyframes FadeElement {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.dev-name {
+  width: max-content;
+  line-height: 1.4;
+
+  @include mobile() {
+    width: auto;
+  }
+}
+
+.hero-text {
+  opacity: 0;
+  position: absolute;
+  width: max-content;
+
+  @include customSmallBp() {
+    font-size: 2.3rem;
+  }
+}
+
+.hero-text-parent {
+  @include customSmallBp() {
+    font-size: 2.3rem;
+  }
+}
+
+.hero-text1 {
+  animation: hero-text1 17s infinite ease-in-out;
+}
+
+.hero-text2 {
+  animation: hero-text2 17s infinite ease-in-out;
+}
+
+.hero-text3 {
+  animation: hero-text3 17s infinite ease-in-out;
+}
+
+@keyframes hero-text1 {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hero-text2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hero-text3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.btns-group {
+  @include FlexCenterRow();
+}
+
+.btn-play-video {
+  @include backgroundImage(
+    "../../assets/Home/Icons/homePlaybtn.svg",
+    "../../assets/Home/Icons/HomePlayBtnHover.svg",
+    140px
+  );
+  padding-right: 30px;
+}
+
+.right-img-part {
+  @include desktopThridBpMixin() {
+    position: relative;
+    right: 130px;
+  }
+
+  @include elementSize(880px, 600px);
+  margin-right: -55px;
+
+  @include FlexCenterRow();
+
+  @include desktop() {
+    @include elementSize(780px, 530px);
+
+    position: relative;
+    right: 75px;
+  }
+
+  @include laptop() {
+    @include elementSize(710px, 480px);
+
+    padding-right: 40px;
+    right: 145px;
+  }
+
+  @include tablet() {
+    min-width: 850px;
+    height: 610px;
+    right: 0;
+    padding-right: 0px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    min-width: 700px;
+    height: 495px;
+  }
+
+  @include mobile() {
+    min-width: 600px;
+    height: 430px;
+  }
+}
+
+@include mobile() {
+  div .parallax {
+    overflow-x: hidden !important;
+  }
+}
+
+.dev-img {
+  animation: MoveElementbyMargin 1.4s 1 ease-in-out;
+}
+
+.scroll-down-element {
+  @include flexCenterColumn();
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 40px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.scroll-down-arrow-img {
+  animation: mymove 1.5s infinite;
+  position: relative;
+}
+
+.hero-scroll-first-line {
+  font-size: 2rem;
+  color: $white-text;
+  font-family: "Poppins", sans-serif;
+
+  @include desktop() {
+    font-size: 1.85rem;
+  }
+}
+
+.hero-scroll-second-line {
+  font-size: 2rem;
+
+  color: $theme-green-color;
+  font-family: "Poppins", sans-serif;
+
+  @include desktop() {
+    font-size: 1.85rem;
+  }
+}
+
+// // -------------   Home Page Second Section ------------------
+
+.h-second-sec {
+  @include VerticalPadding(60px, 130px);
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.contact-btn {
+  @include backgroundImage(
+    "../../assets/Home/Icons/HomecontactBtn.svg",
+    "../../assets/Home/Icons/HomecontactBtnHover.svg",
+    15px
+  );
+
+  width: max-content;
+  // padding: 30px 20px 35px 67px;
+  padding: 10px 25px 12px 55px;
+  background-size: 27px 27px;
+
+  &:hover {
+    background-size: 43px 43px;
+  }
+
+  @include desktop() {
+    padding: 8px 20px 10px 65px;
+  }
+}
+
+.short-about-para {
+  @include laptop() {
+    margin-top: 3.8rem;
+  }
+}
+
+.query-type-text,
+.short-about-para {
+  margin: 4.5rem 0rem;
+
+  @include generalMedumSizeText(3.2rem);
+  font-size: 3.2rem;
+
+  color: $white-text;
+
+  @include laptop() {
+    font-size: 2.9rem;
+  }
+
+  @include desktop() {
+    font-size: 3rem;
+    margin-top: 0px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    font-size: 2.6rem;
+  }
+}
+
+.problem-solver-txt {
+  @include generalMedumSizeText(2.2rem);
+  color: $white-text;
+
+  @include desktop() {
+    width: fit-content;
+  }
+}
+
+.home-background-text {
+  top: 22%;
+  left: 0%;
+  transform: rotate(330deg);
+
+  @include tablet() {
+    top: 41%;
+    left: 6%;
+  }
+
+  @include largeWidthSizeMobiles() {
+    height: min-content;
+    font-size: 18rem !important;
+    left: 0%;
+  }
+
+  @include mobile() {
+    font-size: 12rem !important;
+    top: 46%;
+  }
+}
+
+.problem-solver-txt,
+.query-type-text {
+  width: max-content;
+
+  @include desktop() {
+    width: fit-content;
+  }
+}
+
+.h-sec-right-part,
+.h-sec-left-part {
+  z-index: 1;
+}
+
+.h-sec-right-part {
+  width: 750px;
+
+  @include desktop() {
+    width: 680px;
+  }
+
+  @include laptop() {
+    width: 520px;
+  }
+  @include mobile() {
+    width: auto;
+  }
+}
+
+.exp-txt {
+  @include generalText(2.2rem);
+  color: $white-text;
+  padding-left: 10px;
+
+  @include largeWidthSizeMobiles() {
+    .exp-txt {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.exp-digit {
+  @include generalHeadingOne(7rem);
+
+  @include desktop() {
+    font-size: 4.5rem;
+  }
+  @include largeWidthSizeMobiles() {
+    font-size: 4.2rem;
+  }
+}
+
+// // ---------- Home  Cards Section-------------------
+
+.cards-section {
+  background: linear-gradient(180deg, rgba(0, 0, 36, 1) 50%, rgb(2 2 67) 50%);
+  @include VerticalPadding(80px, 80px);
+
+  @include laptop() {
+    padding-top: 0;
+  }
+}
+
+.main-cards-parent {
+  @include desktop() {
+    flex-wrap: nowrap;
+  }
+
+  @include laptop() {
+    flex-wrap: wrap;
+  }
+}
+
+div .cards-parent {
+  @include cardParent(370px, 570px);
+  padding: 35px 35px 35px 35px;
+  position: relative;
+  min-width: auto !important;
+
+  &:hover .cards-para {
+    color: $white-text;
+  }
+
+  &:hover .completed-projects {
+    color: $white-text;
+  }
+
+  &:hover .card-img-underline {
+    background-color: $white-text;
+  }
+
+  &:hover .card-img {
+    background-color: $white-text;
+  }
+
+  @include desktop() {
+    @include cardParent(320px, 530px);
+
+    padding: 35px 25px 35px 25px;
+  }
+
+  @include tablet() {
+    padding: 35px 15px 35px 15px;
+    flex-wrap: wrap !important;
+  }
+
+  @include largeWidthSizeMobiles() {
+    padding: 35px 25px 35px 25px;
+    width: auto !important;
+  }
+
+  @include customSmallBp() {
+    width: auto !important;
+  }
+}
+
+.home-cards-parent {
+  width: 410px !important;
+
+  @include desktop() {
+    width: 340px !important;
+  }
+
+  @include laptop() {
+    width: 370px !important;
+  }
+
+  @include tablet() {
+    width: 315px !important;
+  }
+
+  @include largeWidthSizeMobiles() {
+    width: auto !important;
+  }
+}
+
+.ui-ux-design-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/UIUXDesign.svg",
+    "../../assets/Services/Icons/cardsIcons/UIUXDesignHover.svg"
+  );
+}
+
+.front-end-design-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/frontEnd.svg",
+    "../../assets/Services/Icons/cardsIcons/frontEndHover.svg"
+  );
+}
+
+.full-stack-design-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/fullStack.svg",
+    "../../assets/Services/Icons/cardsIcons/fullStackHover.svg"
+  );
+}
+
+.bugs-fixer-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/bugsFix.svg",
+    "../../assets/Services/Icons/cardsIcons/bugsFixHover.svg"
+  );
+}
+
+.cards-title {
+  @include font(3rem, bold, #ffffff, #ffffff);
+
+  @include desktop() {
+    font-size: 2.6rem;
+  }
+
+  @include largeWidthSizeMobiles() {
+    font-size: 2.6rem;
+  }
+}
+
+.cards-para {
+  @include font(2rem, "regular", $general-normalSize-text-color, #ffffff);
+
+  @include desktop() {
+    font-size: 1.9rem;
+  }
+  @include largeWidthSizeMobiles() {
+    .cards-para {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.card-img-underline {
+  width: 19px;
+  height: 2px;
+
+  border-radius: 30px;
+  background-color: $theme-green-color;
+}
+
+.completed-projects {
+  @include font(2rem, "regular", $theme-green-color, #ffffff);
+  position: absolute;
+  bottom: 5%;
+}
+
+// -------------  Testinmonials section ----------------------
+
+.testimonials-section {
+  padding-bottom: 170px;
+
+  @include laptop() {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @include tablet() {
+    padding-bottom: 170px;
+  }
+}
+
+.carousel {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  @include flexColumn(center, center);
+
+  @include laptop() {
+    height: auto;
+    padding-top: 0px;
+  }
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.carousel-indicators {
+  top: 550px;
+  left: 53px !important;
+}
+
+.carousel-item {
+  left: 11%;
+  width: 90% !important;
+
+  @include desktop() {
+    left: 5%;
+  }
+
+  @include laptop() {
+    left: 0%;
+  }
+
+  @include tablet() {
+    left: 7%;
+  }
+}
+
+.carousel-caption {
+  width: 800px;
+  left: 300px;
+  top: -20px;
+  padding: 50px 80px 20px 30px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: flex-start !important;
+  text-align: justify !important;
+
+  @include desktop() {
+    width: 700px;
+  }
+
+  @include laptop() {
+    top: 0;
+    width: 610px;
+    left: 230px;
+    padding: 0px 80px 20px 30px !important;
+  }
+
+  @include tablet() {
+    width: 570px;
+    position: absolute;
+    left: 180px;
+    top: -16px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    width: auto;
+    position: static;
+    padding: 0px 30px 20px 30px !important;
+  }
+
+  @include mobile() {
+    padding: 20px 25px 0 0px !important;
+  }
+
+  @include customSmallBp() {
+    padding: 20px 50px 0 0px !important;
+    margin-left: -14px !important;
+    padding: 20px 0px 0 0px !important;
+  }
+}
+
+.carousel-heading {
+  font-family: "Poppins" !important;
+  font-size: 2.2rem !important;
+  font-weight: 500 !important;
+
+  @include laptop() {
+    font-size: 2rem !important;
+  }
+
+  @include largeWidthSizeMobiles() {
+    font-size: 1.7rem !important;
+    width: auto;
+    position: static;
+    padding: 20px 13px 0 0px !important;
+  }
+
+  @include mobile() {
+    width: auto;
+    padding-right: 0 !important;
+  }
+}
+
+.carousel-paragraph {
+  font-family: "Poppins" !important;
+  font-size: 1.8rem !important;
+  font-weight: lighter !important;
+  color: $general-normalSize-text-color;
+
+  @include largeWidthSizeMobiles() {
+    font-size: 1.5rem !important;
+  }
+
+  @include mobile() {
+  }
+}
+
+.testimonial-image {
+  position: relative !important;
+  width: 300px !important;
+  height: 350px !important;
+
+  @include laptop() {
+    position: relative !important;
+    width: 280px !important;
+    height: 280px !important;
+    margin-left: -30px !important;
+  }
+
+  @include tablet() {
+    margin-left: -70px !important;
+  }
+  @include largeWidthSizeMobiles() {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  @include customSmallBp() {
+    width: 78vmin !important;
+    height: 78vmin !important;
+  }
+}
+.carosalBtn {
+  border: 0 !important;
+  border-radius: 50% !important;
+  width: 15px !important;
+  height: 15px !important;
+  opacity: 1 !important;
+  background-color: white !important;
+
+  @include largeWidthSizeMobiles() {
+    width: 13px !important;
+    height: 13px !important;
+  }
+}
+
+.carousel-indicators .active {
+  background-color: $theme-green-color !important;
+}
+
+.carousel-control-prev {
+  width: auto !important;
+}
+
+.carousel-control-btn {
+  width: min-content !important;
+  left: 570px !important;
+
+  position: absolute !important;
+  top: 500px !important;
+
+  height: fit-content !important;
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+div .carousel-control-btn,
+div .carousel-indicators {
+  position: static !important;
+}
+
+.scroll-events-parent {
+  position: absolute;
+  bottom: -110px;
+  @include flexColumn(unset, center);
+
+  @include laptop() {
+    bottom: -70px;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../../assets/Home/Icons/preIcon.svg) !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../../assets/Home/Icons/nexticon.svg) !important;
+}
+
+.comma {
+  width: 32px;
+
+  @include largeWidthSizeMobiles() {
+    width: 26px;
+  }
+}
+
+.commaUp {
+  margin-top: 6px;
+}
+
+.star {
+  padding-right: 5px;
+  @include largeWidthSizeMobiles() {
+    width: 23px;
+  }
+}
+
+.testimonial-personName {
+  color: #ffffff !important;
+  font-size: 2.4rem !important;
+  font-weight: bold !important;
+  font-family: "Poppins", sans-serif;
+  @include largeWidthSizeMobiles() {
+    font-size: 2.2rem !important;
+  }
+}
+
+.reviewStars {
+  @include largeWidthSizeMobiles();
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}

@@ -1,0 +1,45 @@
+
+// // ------------  End  MIXINS  ---------------
+
+.theme_background_first_layer {
+  @include elementSize(100%, 100vh);
+  background-color: #00da5d;
+  overflow: hidden;
+}
+
+.shape_TopRight {
+  @include elementSize(350px, 350px);
+  right: -180px;
+  top: -150px;
+}
+
+.shape_TopLeft {
+  @include elementSize(220px, 220px);
+  left: -60px;
+  top: -35px;
+}
+
+.shape_MidLeft {
+  @include elementSize(220px, unset);
+  left: -12px;
+  top: 30%;
+}
+
+.shape_MidRight {
+  @include elementSize(180px, unset);
+  right: -77px;
+  top: 50%;
+}
+
+.shape_BottomLeft {
+  @include elementSize(230px, unset);
+  left: -92px;
+  bottom: -13%;
+}
+
+.shape_BottomRight {
+  @include elementSize(250px, 250px);
+
+  right: -70px;
+  bottom: -66px;
+}

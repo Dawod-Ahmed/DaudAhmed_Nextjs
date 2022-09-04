@@ -1,0 +1,837 @@
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+  transition-duration: 2s;
+}
+
+.tooltips {
+  padding: 5px 10px;
+  background-color: $cards-background-color;
+  width: fit-content;
+  border-radius: 15px;
+  position: absolute;
+
+  min-width: 300px;
+  max-width: 350px;
+  border: 2px solid $theme-green-color;
+  visibility: hidden;
+  color: $white-text;
+  z-index: 2;
+  bottom: 110%;
+  left: 10px;
+  @include laptop() {
+    min-width: 250px;
+    max-width: 350px;
+  }
+
+  @include tablet() {
+    display: none;
+  }
+}
+
+.tooltips::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: $cards-background-color;
+  bottom: -12px;
+
+  left: 44%;
+  transform: rotate(45deg);
+  border-bottom: 2px solid $theme-green-color;
+  border-right: 2px solid $theme-green-color;
+}
+
+.show-tooltip:hover .tooltips {
+  visibility: visible;
+  position: relative;
+}
+
+.about-main {
+  padding-top: 0px;
+}
+
+.modal-video-body {
+  max-width: 1600px !important;
+  @include desktopSecondBpMixin() {
+    max-width: 1450px !important;
+  }
+
+  @include desktopThridBpMixin() {
+    max-width: 1300px !important;
+  }
+  @include desktop() {
+    max-width: 1135px !important;
+  }
+
+  @include laptop() {
+    max-width: 930px !important;
+  }
+
+  @include tablet() {
+    max-width: 100% !important;
+  }
+}
+
+.modal-video-body {
+  max-width: 1600px !important;
+  @include desktopSecondBpMixin() {
+    max-width: 1450px !important;
+  }
+
+  @include desktopThridBpMixin() {
+    max-width: 1300px !important;
+  }
+  @include desktop() {
+    max-width: 1135px !important;
+  }
+
+  @include laptop() {
+    max-width: 930px !important;
+  }
+
+  @include tablet() {
+    max-width: 100% !important;
+  }
+}
+
+.modal-video-inner,
+.modal-video-body {
+  @include desktop() {
+    padding: 0 !important;
+  }
+}
+.modal-video-close-btn {
+  @include desktop() {
+    top: -45px !important;
+    right: 15px !important;
+  }
+}
+
+body .modal-backdrop {
+  display: none !important;
+}
+
+.modal-dialog {
+  display: flex;
+  height: -webkit-fill-available;
+  width: 85%;
+  max-width: unset;
+  @include mobile() {
+    top: 19%;
+  }
+}
+
+.modal-content {
+  border: unset;
+  background: transparent;
+}
+
+.modal-header {
+  border: unset;
+  width: fit-content;
+  @include tablet() {
+    position: static !important;
+
+    margin: 0 auto;
+  }
+}
+
+.btn-close {
+  padding-left: 55px !important;
+  padding-bottom: 15px !important;
+}
+.video-back-layer {
+  background-color: #04040496;
+  height: 100vh;
+  z-index: 1;
+  left: 0px;
+  top: 0;
+}
+
+.btn-close {
+  width: min-content;
+  background-color: rgba(253, 253, 253, 0.951);
+}
+.video-section {
+  @include FlexCenterRow;
+  height: 700px;
+  background-image: url(../../assets/About/AboutBackImg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+
+  @include desktop() {
+    height: 560px;
+  }
+
+  @include laptop() {
+    height: 510px;
+  }
+
+  @include tablet() {
+    height: 480px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    height: 420px;
+  }
+
+  @include mobile() {
+    height: 390px;
+  }
+  @include customSmallBp() {
+    height: 330px;
+  }
+}
+.modal-header {
+  position: absolute;
+  right: -80px;
+  top: 0;
+}
+.modal-dialog {
+  z-index: 320;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+
+  @include largeWidthSizeMobiles() {
+    padding: 0 20px 0 20px !important;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.video-react-control {
+  @include laptop() {
+    height: 95vh !important;
+  }
+
+  @include tablet() {
+    height: 88vh !important;
+  }
+}
+.video-react-control:before {
+  top: 0 !important;
+}
+.video-react {
+  padding-top: 0 !important;
+  @include elementSize(100%!important, 90vh!important);
+
+  @include mobile() {
+    height: 55vh !important;
+  }
+}
+
+.video-react-poster {
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+  cursor: unset !important;
+}
+
+.video-react:hover .video-react-big-play-button {
+  border: 6px solid #00da5d !important;
+}
+
+.video-section:hover {
+  .video-react .video-react-big-play-button {
+    border-radius: 50px !important;
+    width: 90px !important;
+    height: 90px !important;
+    border: 6px solid #00da5d;
+    background-color: black;
+    background-color: rgba(0, 218, 93, 54%);
+  }
+}
+
+.model-opening-icon {
+  background-image: url(../../assets/About/playIcon.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50% !important;
+  background-position: 65% center;
+
+  @include largeWidthSizeMobiles() {
+    background-size: 35% 35% !important;
+    background-position: 58% center;
+  }
+}
+
+.video-react .video-react-big-play-button,
+.model-opening-icon {
+  border-radius: 50px !important;
+  width: 90px !important;
+  height: 90px !important;
+  border: 6px solid #00da5d;
+  background-color: rgba(0, 218, 93, 54%) !important;
+  transition-duration: 0.5s;
+
+  @include largeWidthSizeMobiles() {
+    width: 65px !important;
+    height: 65px !important;
+    border: 4px solid #00da5d;
+  }
+}
+
+.video-react-button:hover,
+.model-opening-icon:hover {
+  box-shadow: 0px 0px 100px 10px #00da5dd6;
+  background-color: rgb(5 235 103 / 71%) !important;
+  transition-duration: 0.5s;
+}
+.btn-play-video:hover {
+  background-color: unset;
+  box-shadow: none;
+  text-shadow: 0px 0px 30px rgb(251 251 251);
+}
+
+.video-secton-play-btn button:before {
+  top: 0px !important;
+}
+
+.video-react-button,
+.video-react-big-play-button,
+.video-react-big-play-button-center,
+.video-react-icon-play-arrow:before,
+.video-react .video-react-bezel .video-react-bezel-icon-play:before,
+.video-react .video-react-play-control:before,
+.video-react .video-react-big-play-button:before,
+.accordion-item,
+.accordion-header,
+.accordion-button,
+div div .video-react-control {
+  cursor: url(../../assets/generalIcons/pointerCursor.png), auto;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled),
+.accordion-item,
+.accordion-header,
+.accordion-button,
+div div .video-react-control {
+  cursor: url(../../assets/generalIcons/pointerCursor.png), auto;
+}
+
+.experience-heading {
+  z-index: 0;
+}
+
+button:before {
+  font-size: 53px;
+  top: 16px !important;
+}
+
+.resume-btn {
+  z-index: 3;
+}
+
+.about-me-section {
+  @include flexRow("between", center);
+  overflow: hidden;
+  background-color: $theme-seconds-background-color;
+  padding-bottom: 200px !important;
+  @include laptop() {
+    margin-bottom: 55px;
+    padding-bottom: 3rem !important;
+  }
+
+  @include tablet() {
+    margin-bottom: 85px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    margin-bottom: 80px;
+  }
+}
+
+.about-self-img {
+  @include elementSize(370px, 500px);
+  margin-left: 55px;
+
+  @include desktop() {
+    @include elementSize(360px, 470px);
+    margin-left: 65px;
+  }
+
+  @include laptop() {
+    @include elementSize(330px, 440px);
+  }
+
+  @include tablet() {
+    margin-left: 80px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    margin-left: 50px;
+  }
+
+  @include mobile() {
+    @include elementSize(290px, 380px);
+  }
+  @include customSmallBp() {
+    @include elementSize(240px, 330px);
+
+    margin-left: 65px;
+  }
+}
+
+.about-left-img-part {
+  @include flexColumn(flex-end, center);
+  transform: rotateY(180deg);
+  margin-left: -180px;
+  position: relative;
+  padding-top: 80px;
+  left: 55px;
+  animation: MoveElementAbout 1.4s 1 ease-in-out;
+
+  @include desktop() {
+    margin-left: -220px;
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    margin-left: -100px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    margin-left: -65px;
+  }
+
+  @include mobile() {
+    margin-left: -55px;
+  }
+  @include customSmallBp() {
+    margin-left: -40px;
+  }
+}
+@keyframes MoveElementAbout {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+
+.about-right-part {
+  @include flexColumn(null, flex-start);
+  margin-left: -60px;
+  position: relative;
+  z-index: 0;
+  margin-top: -80px;
+  @include desktop() {
+    margin-left: -130px;
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    margin-left: 0;
+  }
+
+  @include largeWidthSizeMobiles() {
+    position: static;
+    margin-left: 0;
+  }
+
+  @include mobile() {
+  }
+}
+
+.about-shadow-image {
+  @include elementSize(790px, 260px);
+  position: relative;
+  bottom: 182px;
+
+  transform: rotate(3deg);
+
+  @include desktop() {
+    @include elementSize(770px, 240px);
+    bottom: 170px;
+  }
+
+  @include laptop() {
+    @include elementSize(740px, 230px);
+  }
+
+  @include customSmallBp() {
+    @include elementSize(680px, 200px);
+
+    bottom: 136px;
+  }
+}
+
+.aboutme-background-text {
+  top: 50%;
+  width: 92%;
+
+  @include desktopSecondBpMixin() {
+    top: 50%;
+  }
+
+  @include desktop() {
+    top: 68%;
+  }
+
+  @include laptop() {
+    top: 73%;
+  }
+
+  @include tablet() {
+    top: 49%;
+  }
+
+  @include largeWidthSizeMobiles() {
+    top: 49%;
+  }
+
+  @include mobile() {
+    top: 48%;
+  }
+
+  @include customSmallBp() {
+    top: 46%;
+  }
+}
+
+// -------------Experiennce  Section -----------
+
+.experience-section {
+  @include flexCenterColumn();
+  background-color: $main-background-color;
+}
+.experience-cards-parent {
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  @include desktopThridBpMixin() {
+    justify-content: space-between;
+  }
+
+  @include tablet() {
+    justify-content: center;
+  }
+}
+.experience-card {
+  position: relative;
+
+  background-color: $cards-background-color;
+  border-left: 4px solid $theme-green-color;
+  @include elementSize(550px, 320px);
+
+  margin-bottom: 55px !important;
+  @include desktop() {
+    @include elementSize(490px, 320px);
+    margin-bottom: 50px !important;
+  }
+
+  @include laptop() {
+    @include elementSize(410px, 360px);
+  }
+
+  @include tablet() {
+    @include elementSize(540px, 300px);
+  }
+
+  @include largeWidthSizeMobiles() {
+    margin-bottom: 43px !important;
+  }
+
+  @include mobile() {
+    margin-bottom: 30px !important;
+    @include elementSize(auto, auto);
+  }
+}
+.video-react .video-react-big-play-button.video-react-big-play-button-center {
+  transition-duration: 0.5s;
+}
+.experience-card:hover .department-location,
+.experience-card:hover .duration,
+.experience-card:hover .duration-dot,
+.department-title,
+.experience-card:hover .experience-detail {
+  color: $white-text;
+  transition-duration: 0.4s;
+}
+
+.experience-card:hover {
+  background-color: $theme-first-background-color;
+  box-shadow: 0px 0px 50px 10px $cards-hover-color;
+  border-color: $cards-background-color;
+  transition-duration: 0.4s;
+}
+
+.department-location {
+  @include smallText();
+  color: $theme-green-color;
+}
+
+.duration-dot {
+  color: $theme-green-color;
+  font-size: 20px;
+}
+.duration {
+  position: static;
+
+  @include smallText();
+  color: $white-text;
+}
+
+.department-title {
+  @include generalMedumSizeText(1.6rem);
+  color: $white-text;
+}
+.experience-detail {
+  @include generalText(20px);
+}
+
+// ------------ Skills Section----
+
+.heading-detail {
+  @include generalText(22px);
+}
+.skill-section {
+  @include flexCenterColumn();
+  background-color: $main-background-color;
+}
+.skills-parent {
+  @include flexRow(space-around, space-around);
+  flex-wrap: wrap;
+}
+div .skill-img-parent {
+  @include flexColumn(center, center);
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+
+  @include bpskillsIcons() {
+    margin: 0 20px !important;
+  }
+}
+
+.skill-img {
+  width: 65%;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+.skills-img-div {
+  position: relative;
+
+  @include elementSize(150px, 150px);
+  @include FlexCenterRow();
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+    @include elementSize(125px, 125px);
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    @include elementSize(90px, 90px);
+  }
+
+  @include mobile() {
+    @include elementSize(80px, 80px);
+  }
+  @include customSmallBp() {
+    @include elementSize(70px, 70px);
+  }
+}
+.skill-name {
+  @include generalMedumSizeText(2.5rem);
+  color: $white-text;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+    font-size: 2rem;
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    font-size: 1.7rem;
+  }
+
+  @include mobile() {
+  }
+  @include customSmallBp() {
+    font-size: 1.5rem;
+  }
+}
+
+.skills-img-div::before,
+.skills-img-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #0f0
+  );
+  background-size: 400%;
+  opacity: 1;
+  border-radius: 50%;
+  transition: 0.5%;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+.skills-img-div::after {
+  filter: blur(35px);
+  animation: animate 20s linear infinite;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+.bg-gradient-color-hidder {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: #010139;
+  z-index: 1;
+  border-radius: 50%;
+  margin-right: -1.5px;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+.skills-img-div .skill-img {
+  position: absolute;
+  transition: 0.5s;
+  z-index: 1;
+
+  animation: MoveSKillIcon 2s infinite ease-in-out;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+@keyframes MoveSKillIcon {
+  0% {
+    margin-top: -10px;
+  }
+
+  50% {
+    margin-top: 10px;
+  }
+
+  100% {
+    margin-top: -10px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

@@ -1,0 +1,1923 @@
+// --------------- Form Section  --------------------
+.contact-section-parent {
+  @include flexRow(space-between, center);
+  height: 750px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+          height: auto;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+           
+     padding-right: 0;
+
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.contact-left-content {
+  @include flexColumn(flex-start, flex-start);
+  background-color: $theme-third-background-color;
+  @include elementSize(48%, 100%);
+  height: 100%;
+  padding-top: 75px;
+  padding-left: 50px;
+        padding-right: 30px;
+
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      width: 44%;
+        padding-left: 30px;
+      
+  }
+
+
+  @include tablet() {
+      padding-bottom: 5rem!important;
+            width: 100%;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+          padding-right: 20px;
+
+  }
+
+  @include mobile() {
+      
+        width: 95%;
+         padding-right: 15px;
+      align-self: flex-start
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.open-for-porject {
+  @include elementSize(160px, 160px);
+  @include HorizontalPadding(21px, 21px);
+
+  top: 50%;
+  right: -80px;
+
+  transform: rotate(40deg);
+  background-color: $white-text;
+
+  @include generalMedumSizeText(20px);
+  color: rgb(0, 0, 0);
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      top: 58%;
+    right: -62px;
+        @include elementSize(130px, 130px);
+
+  }
+
+
+  @include tablet() {
+          font-size:1.7rem;
+      top: 81%;
+    right: 50px;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+       font-size: 1.5rem;
+    top: 88%;
+    right: 50px;
+z-index: 1;
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.connect-text {
+    position: relative;
+    z-index: 1;
+}
+ 
+
+.main-form-parent {
+  @include flexColumn(center, flex-end);
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.open-for-porject:hover {
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.floatinglbl {
+  color: $general-normalSize-text-color;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.form-btn {
+  align-self: flex-flex-start;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+ 
+
+.input {
+  // @include elementSize(100%, 70px!important);
+  font-size: 26px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.form-floating>label {
+padding-top:0!important;
+padding-left:0!important;
+}
+
+.floatinglbl {
+  font-size: 20px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.form-control:focus {
+  box-shadow: none;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  transform: scale(0.85) translateY(-1.2rem) translateX(0.15rem);
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.detail-input {
+  // border: 1px solid #dee2e6 !important;
+  min-height: 140px !important;
+  max-height: 200px !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.background-text {
+  position: relative;
+  width: 100%;
+  text-align: center;
+     font-size: 180px;
+     transform: rotate(330deg);
+
+  color: #29313c;
+  font-weight: weight(medium);
+  font-family: "Hei_Reina", sans-serif;
+      bottom: 10px;
+
+  right: 30px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+        font-size: 140px;
+    bottom: 0px;
+  }
+
+
+  @include tablet() {
+          position: absolute;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+          right: 0px;
+
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.contact-form-right-icon {
+  animation: animateContactArrow 1.5s infinite ease-in-out;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      position: relative;
+       animation: animateContactArrowOnSm 1.5s infinite ease-in-out!important;
+ width: 120px;
+    transform: rotate(90deg);
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+          width: 100px;
+
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+
+@keyframes animateContactArrow {
+  0% {
+    margin-left: 0px;
+  
+ 
+ 
+
+ 
+
+
+  }
+
+  50% {
+    margin-left: 15px;
+  
+    }
+ 
+
+  100% {
+    margin-left: 0px;
+   
+ 
+
+  }
+ 
+ 
+
+}
+
+@keyframes animateContactArrowOnSm {
+  0% {
+    
+      top: 0px;
+  
+ 
+
+  }
+
+  50% {
+    top:-23px;
+  
+    }
+ 
+
+  100% {
+   top: 0px;
+   
+ 
+
+  }
+ 
+ 
+
+}
+#testpara {
+     @include tablet() {
+       position: relative;
+    z-index: 1;
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+   
+}
+
+.contact-right-form {
+  // background: #00da5d;
+  @include elementSize(37%, auto);
+  padding-top: 0;
+
+  @include desktop() {
+          width: 42.5%;
+
+  }
+
+
+
+  @include laptop() {
+              width: 45.5%;
+
+
+      
+  }
+
+
+  @include tablet() {
+        width: 510px;
+            
+    margin-top: 130px;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+    width: 470px;
+
+  }
+
+  @include mobile() {
+    
+          width: 420px;
+
+
+      
+  }
+ @include customSmallBp() {
+                width: auto;
+ margin-left: 13px;
+      
+  }
+
+
+}
+
+@media (max-width: 511px) {
+  .swal-modal {
+    width: 100%;
+   
+
+
+  }
+
+ 
+
+
+}
+
+// .swal2-success-line-tip,
+// .swal2-success-line-long {
+//   background-color: $theme-seconds-background-color !important;
+
+  
+
+// }
+
+
+// .swal2-icon.swal2-success .swal2-success-ring {
+//   border: 0.25em solid $theme-seconds-background-color !important;
+ 
+
+// }
+
+// .swal2-icon.swal2-success [class^="swal2-success-line"] {
+//   border: 0.25em solid $theme-seconds-background-color;
+
+ 
+
+// }
+
+
+// div .swal2-icon,
+// .swal2-success,
+// .swal2-icon-show {
+//   border: none !important;
+
+ 
+
+// }
+
+
+.swal2-success-line-tip,
+.swal2-success-line-long {
+  background-color: $theme-seconds-background-color !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.swal2-icon.swal2-success {
+  border-color: $theme-seconds-background-color !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.swal2-icon.swal2-success [class^="swal2-success-line"][class$="tip"] {
+  left: 0.4125em !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.swal2-html-container{
+  font-weight: bold!important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+// -----------------------
+.card {
+  border-radius: 25px;
+  animation: MoveElementContact 1.4s 1 ease-in-out;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+@keyframes MoveElementContact {
+  0% {
+    top: 300px;
+  
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+  }
+  100% {
+    top: 0px;
+  
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+  }
+
+   
+
+
+}
+
+.card-body {
+  background-color: white;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  z-index: 0;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.card-img-top {
+  padding: 0 28px 0 0;
+  margin-bottom: -10px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.card-title {
+  color: black;
+ font-size: 3.3rem;
+  font-weight: bold;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.card-text,
+.hireMe-text {
+  color: black;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+     padding-bottom: 10px; 
+  }
+
+
+}
+.hireMe-text {
+  font-size: 29px;
+  font-weight: bold;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.hireme-cta-parent{
+     @include customSmallBp() {
+      flex-direction: column
+      
+  }
+}
+
+.hireme-cta {
+  background-image: url(../../assets/Contact/images/UpworkLogo.png);
+  background-repeat: no-repeat;
+  background-size: 90% 85%;
+  padding-bottom: 5px;
+  background-position: center center;
+    @include elementSize(180px,60px);
+
+  @include desktop() {
+      
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+  }
+ 
+// -------------------------
+
+.accordion-section {
+  @include flexCenterColumn();
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-item:last-of-type .accordion-button {
+  border-bottom-right-radius: unset !important;
+  border-bottom-left-radius: unset !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.accordion-parent {
+  @include flexColumn(flex-flex-start, unset);
+  // align-self: flex-flex-start;
+  width: 63%;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+          width: 85%;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+          width: 100%;
+
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-item {
+  border: 1px solid $theme-green-color !important;
+  border-radius: 10px !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-item:focus {
+  box-shadow: 0 0 0 0.25rem $theme-green-color;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-button {
+  @include generalText(22px);
+  @include flexRow(space-between, stretch);
+  padding: 0 0 0 15px;
+  color: $white-text !important;
+  background-color: $theme-seconds-background-color;
+  border-radius: 10px;
+  .questions{
+    line-height: 30px;
+  }
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.accordion-header .collapsed .expander-parent {
+  border-bottom-right-radius: 10px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-button::after {
+  display: none !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.expander-parent {
+  background: $theme-green-color;
+  min-width: 15%;
+  border-top-right-radius: 9px;
+  min-height: 100px;
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+
+  }
+
+  @include mobile() {
+ 
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.expander {
+  @include elementSize(27px, 4px);
+  background-color: $white-text;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.expanderY {
+  transform: rotate(90deg);
+  transition-duration: 0.2s;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.expanderX {
+  position: relative;
+  top: 3px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.activeAccordion {
+  transform: rotateY(90deg);
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.accordion-button:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+  // box-shadow: 0 0 0 0.25rem $theme-green-color;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-button:not(.collapsed) {
+  color: $white-text !important;
+  background-color: $theme-seconds-background-color;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.accordion-body {
+  background-color: #04045f;
+  color: #ffffff;
+  @include VerticalPadding(45px, 45px);
+  @include generalText(22px);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.faq-heading-parent {
+  @include flexCenterColumn();
+  @include HorizontalPadding(130px, 130px);
+
+  @include desktop() {
+        padding: 0 60px 70px 60px;
+  }
+
+
+
+  @include laptop() {
+      
+            padding: 0 20px 50px 20px;
+
+  }
+
+
+  @include tablet() {
+       padding: 0 0px 50px 0px;
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+.faq-accordion-image-parent {
+  @include flexRow(space-between, flex-start);
+ justify-content: space-around;
+  @include desktop() {
+       justify-content: space-between;
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+
+}
+
+.faqs-img {
+      width: 300px;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+          width: 280px;
+
+      
+  }
+
+
+  @include tablet() {
+    width: 450px;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+                width: 380px;
+
+  }
+
+  @include mobile() {
+      
+      width: 370px;
+  }
+ @include customSmallBp() {
+      
+      width: 290px;
+  }
+
+
+}

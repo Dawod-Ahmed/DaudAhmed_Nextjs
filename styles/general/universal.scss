@@ -1,0 +1,454 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+// after 1540px h-second-sec justify-content-around
+// project-img-text text-center fw-bold text-white position-relative
+
+// /* Handle on hover */
+
+* {
+  box-sizing: border-box !important;
+}
+
+.preloader-parent {
+  position: fixed;
+
+  height: 100vh;
+  background: $theme-seconds-background-color;
+  @include flexCenterColumn;
+  z-index: 10;
+}
+
+.preloader-logo {
+  width: 400px;
+  animation: FadeElement 1.5s infinite;
+}
+
+@keyframes FadeElement {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes MoveElementbyMargin {
+  0% {
+    margin-top: 300px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+body,
+div .carousel-control-btn,
+div .carosalBtn,
+button,
+a,
+.logo {
+  cursor: url(../../assets/generalIcons/pointerCursor.png) !important;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background-color: #eeeeee;
+  text-shadow: #0404f5 5px 5px 10px;
+}
+
+::selection {
+  background-color: #eeeeee;
+  text-shadow: #0202e2 5px 5px 10px;
+}
+
+body {
+  cursor: url(../../assets/generalIcons/cursor.png), auto;
+  overflow: unset !important;
+  padding: 0 !important;
+}
+
+div .carousel-control-btn:hover,
+div .carosalBtn:hover,
+.btn:hover,
+a:hover,
+.scrollBar-Top:hover,
+.scrollTop-Arrow:hover {
+  cursor: url(../../assets/generalIcons/pointerCursor.png), auto;
+}
+
+
+section:not(.video-section, .portfolio-section),
+.header,
+.footer {
+  overflow: hidden;
+  @include HorizontalPadding(50px, 50px);
+
+  @include desktop() {
+    @include HorizontalPadding(40px, 40px);
+  }
+
+  @include laptop() {
+    @include HorizontalPadding(40px, 30px);
+  }
+
+  @include tablet() {
+    @include HorizontalPadding(35px, 35px);
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    @include HorizontalPadding(13px, 13px);
+  }
+}
+
+.header,
+.footer {
+  position: relative;
+  z-index: 100;
+}
+
+.freelancing-section-parent {
+  padding-right: 0px !important;
+}
+
+.contact-section-parent {
+  padding-left: 0px !important;
+}
+
+.page-hider-onScroll {
+  z-index: 1;
+  margin: 0 50px !important;
+  background-color: $theme-first-background-color !important;
+}
+
+main,
+header {
+  margin: 0 50px !important;
+    
+  @include tablet() {
+      margin: 0 0px !important; 
+  }
+}
+
+main {
+  @include VerticalPadding(100px !important, 100px !important);
+  animation: FadePage 1.5s 1 ease-in-out;
+  background-color: $theme-seconds-background-color;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    @include VerticalPadding(70px !important, 70px !important);
+  }
+
+  @include largeWidthSizeMobiles() {
+    @include VerticalPadding(60px !important, 50px !important);
+  }
+
+  @include mobile() {
+    @include VerticalPadding(50px !important, 40px !important);
+  }
+}
+
+@keyframes FadePage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.headroom-wrapper{
+margin: auto 0;
+width: 100%;
+    z-index: 101;
+ @include tablet() {
+  
+  }
+    
+}
+
+.pages-parent {
+  @include flexCenterColumn;
+  @include VerticalPadding(70px, 70px);
+  position: relative;
+  z-index: 0;
+  background-color: unset;
+  margin-top: unset;
+  max-width: 1600px;
+
+  @include desktopSecondBpMixin() {
+    max-width: 1450px;
+
+    .carousel-item {
+      left: 11%;
+    }
+
+    .carousel-control-prev {
+      left: 670px !important;
+    }
+
+    .carousel-control-next {
+      left: 747px !important;
+    }
+  }
+
+  @include desktopThridBpMixin() {
+    max-width: 1300px;
+
+    .carousel-item {
+      left: 7%;
+    }
+
+    .carousel-control-prev {
+      left: 570px !important;
+    }
+
+    .carousel-control-next {
+      left: 644px !important;
+    }
+  }
+
+  @include desktop() {
+    max-width: 1135px;
+  }
+
+  @include laptop() {
+    max-width: 930px;
+  }
+
+  @include tablet() {
+    max-width: 100%;
+    padding: 0 !important;
+  }
+
+}
+
+.heading-first {
+  @include generalHeading(50px);
+}
+
+.heading-second {
+  @include generalHeadingOne(45px);
+}
+
+.btn {
+  @include button();
+}
+
+.general-text {
+  @include generalText(22px);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #0000ff;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000024;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #000092;
+  border-radius: 50px;
+}
+
+.scrollBar-Top {
+  width: 60px;
+  height: 60px;
+  background-color: $theme-first-background-color;
+  right: 15px;
+  bottom: 10px;
+  z-index: 1;
+  transition-duration: 0.5s;
+  border-radius: 15px;
+    
+
+
+    
+}
+.scrollTop-Arrow {
+     @include laptop() {
+      
+      width: 25px;
+  }
+
+
+  @include largeWidthSizeMobiles() {
+      width: 22px;
+  }
+
+  @include mobile() {
+      width: 20px;
+      
+  }
+}
+.scrollBar-Top:hover .scrollTop-Arrow {
+  margin-top: -7px;
+  transition-duration: 0.5s;
+}
+
+div .active-scrollToTop {
+  display: flex !important;
+  transition-duration: 0.5s;
+    
+    
+  @include laptop() {
+      width: 50px;
+    height: 50px;
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+       width: 45px;
+    height: 45px;
+  }
+
+  @include mobile() {
+      
+       width: 40px;
+    height: 40px;
+  }
+    
+}
+
+body .bh-widget-page__button-main {
+  width: 70px !important;
+  height: 70px !important;
+    
+  @include laptop() {
+      
+       width: 60px !important;
+    height: 60px !important;
+  }
+  @include mobile() {
+       width: 50px !important;
+    height: 50px !important;
+      
+  }
+    
+}
+
+body .bh-w-button-whatsapp-chat > img {
+  width: 40px !important;
+  height: 40px !important;
+    
+  @include laptop() {
+      
+       width: 35px !important;
+    height: 35px !important;
+  }
+
+  @include mobile() {
+      
+      width: 28px !important;
+    height: 28px !important;
+  }
+    
+}
+
+body .bh-active .bh-w-button-whatsapp-chat:after {
+  height: 40px !important;
+  width: 40px !important;
+
+  @include laptop() {
+      height: 35px !important;
+    width: 35px !important;
+}
+    
+}
+
+body .bh-widget-page-wrapper {
+  bottom: 90px !important;
+  right: 15px !important;
+  
+
+  @include laptop() {
+      
+      right: 12px !important;
+        bottom: 75px !important;
+
+  }
+
+  @include mobile() {
+      
+          bottom: 60px !important;
+
+  
+  }
+    
+}
+
+ 
+
+body .bh-widget-page--right .bh-widget-page__call-to-action {
+  justify-content: flex-end;
+  right: 84px;
+  top: 20px;
+    
+  @include laptop() {
+      right: 73px;
+    top: 15px;
+      
+  }
+
+
+  @include mobile() {
+     right: 63px;
+    top: 8px; 
+      
+  }
+    
+}
+
+.bh-w-call-to-action {
+
+    @include mobile() {
+      
+          font-size: 12.5px;
+
+  }
+    
+}
+
+
+body .bh-w-call-to-action-container:after {
+  content: "";
+  display: block;
+  left: 98%;
+  bottom: 24px;
+  position: relative;
+    
+}
+.cards-parent:hover {
+  box-shadow: 0px 0px 70px 10px $cards-hover-color;
+  transition-duration: 0.5s;
+}
+
+.project-cycle-img:hover {
+  box-shadow: 0px 0px 100px 10px $cards-hover-color;
+  transition-duration: 0.5s;
+}
