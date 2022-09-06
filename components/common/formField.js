@@ -5,7 +5,7 @@ const FormField = (props) => {
 
   return (
     <>
-      <div className="form-floating ">
+      <div className="form-floating">
         <Field
           as={name === "detail" ? "textarea" : ""}
           //   as="textarea"

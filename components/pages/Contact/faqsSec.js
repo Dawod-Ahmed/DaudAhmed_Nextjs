@@ -15,10 +15,10 @@ const Faqs = () => {
     <div className="faq-heading-parent   ">
       <h1 className="faq-headingg">
         <span className=" heading-first">FAQ</span>
-        <span className=" heading-second">'S</span>
+        <span className=" heading-second">&apos;S</span>
       </h1>
       <p className="faqs-para general-text text-center">
-        To save your valuable time I mentioned some frequently ask questions, let's check if you have any one of these or contact me, I will reply to your query within one hour,sounds great let's connect with me!
+        To save your valuable time I mentioned some frequently ask questions, let&apos;s check if you have any one of these or contact me, I will reply to your query within one hour,sounds great let&apos;s connect with me!
       </p>
     </div>
 
@@ -95,7 +95,7 @@ const AccordionData = [
     number: "Two",
   },
   {
-    heading: "Q3:Can you build the website from scratch,if I don't have a website design?",
+    heading: "Q3:Can you build the website from scratch,if I don&apos;t have a website design?",
     para1:
       "Sure, I have a lot of academic and real industry experience to design attractive & professional websites UI/UX. I will design a professional, engaging, and eye-catching UI/UX website or web application.",
     para2:" ",

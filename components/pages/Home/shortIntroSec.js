@@ -18,7 +18,7 @@ const ShortIntroSection = () => {
             </div>
           </div>
           <Link href="./contact" >
-            <a className="contact-btn btn mb-3">Faq's & Contact</a>
+            <a className="contact-btn btn mb-3">Faq&apos;s & Contact</a>
           </Link>
         </div>
         <div className="h-sec-right-part d-flex flex-column justify-content-between">

@@ -26,7 +26,7 @@ const HeroSection = () => {
           <div className="left-content-part ">
             <span className={`welcome-txt ${hideWelcome}`}>Welcome</span>
             <h1 className="dev-name">
-              <span className="heading-first">I'm Dawood Ahmed,</span>
+              <span className="heading-first">I&apos;m Dawood Ahmed,</span>
               <br />
               <span className="heading-second position-relative hero-text-parent">
                 A&nbsp;

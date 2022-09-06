@@ -40,6 +40,7 @@ const Footer = () => {
               key={index + className}
               href={href}
               target="_blank"
+              rel="noopener noreferrer"
               className={`footer-icon d-flex align-items-center justify-content-center mx-3 ${className}`}
             >
               <img src={img} alt="img" className="footer-icon-img w-50 h-50" />

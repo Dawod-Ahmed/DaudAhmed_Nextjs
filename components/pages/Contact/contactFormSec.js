@@ -27,7 +27,7 @@ const ContactForm = () => {
       <section className="contact-section-parent py-5 mb-5 flex-column flex-lg-row ">
         <div className="contact-left-content position-relative">
           <h1 className="heading  freelancing-heading">
-            <span className="heading-first">Let's</span>
+            <span className="heading-first">Let&apos;s</span>
             {/* <img src="" alt="" /> */}
             <img
               src={ContactRightArrow.src}

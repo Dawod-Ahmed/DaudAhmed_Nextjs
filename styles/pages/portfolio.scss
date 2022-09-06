@@ -265,7 +265,7 @@
   
   
   .project-img-parent {
-    @include elementSize(48%, 100%);
+    @include elementSize(48%, auto);
     position: relative;
     transition-duration: 0.5s;
     overflow: hidden;
@@ -305,7 +305,7 @@
   }
   
   .project-img {
-    @include elementSize(100%, 360px);
+    @include elementSize(100%, 100%);
     border-radius: 20px;
   
   

@@ -33,6 +33,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Dawood Ahmed</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <ThemeFirstLayer />
