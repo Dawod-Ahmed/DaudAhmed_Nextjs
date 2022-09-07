@@ -18,7 +18,7 @@ const ContactForm = () => {
       text: "Your Message is sent!,Thanks",
       icon: "success",
       showConfirmButton: false,
-      timer: 2500,
+      timer: 3000,
     });
   };
 

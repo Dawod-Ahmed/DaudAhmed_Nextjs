@@ -518,7 +518,7 @@ body div .services-card {
 
 
   @include mobile() {
-    width: 70%;
+    width: 90%;
   }
 
 }
@@ -529,7 +529,7 @@ body div .services-card {
   padding-right: 0;
 
   @include laptop() {
-    height: 500px;
+    // height: 500px;
   }
 
   @include tablet() {
@@ -581,7 +581,7 @@ body div .services-card {
 
 .freelancing-img {
   width: 100%;
-  height: 580px;
+  height: 480px;
 
   img {
     object-fit: contain;
@@ -589,6 +589,10 @@ body div .services-card {
 
   }
 
+  @include desktop() {
+    height: 400px;
+
+  }
 
   @include tablet() {
     //

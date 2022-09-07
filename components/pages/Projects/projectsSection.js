@@ -17,7 +17,7 @@ const ProjectsSection = () => {
       title2: "Genie",
       projectDetails:
         "A UK-Based BroadBand Genie,the internet service provider company landing page and developed in Gatsby.Js.",
-      liveLink: "https://youtu.be/2ar16gtzxfY",
+      liveLink: "https://broadband-genie-uk.vercel.app/",
     },
     {
       image: project2,
@@ -41,7 +41,7 @@ const ProjectsSection = () => {
       title2: "On Demand",
       projectDetails:
         "This is US Law Based landing page to introduce their Law On Demand IOS and android Mobile App,this website is developed in Gatsby.Js.",
-      liveLink: "https://youtu.be/WKe2TL5G7nw",
+      liveLink: "https://lawondemand.vercel.app/",
     },
     {
       image: project5,
