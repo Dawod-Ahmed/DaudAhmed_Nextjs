@@ -43,6 +43,7 @@ export { default as AboutImageShadow } from "./About/aboutSelfShadow.png";
 export { default as AboutBackImg } from "./About/AboutBackImg.svg";
 export { default as VideoPlayBtn } from "./About/icons/PlayButton.svg";
 export { default as AboutDaud } from "./About/Daud.png";
+export { default as AboutDaudUpdated } from "./About/DaudUpdated.png";
 export { default as xd } from "./About/icons/skills icons/xd.svg";
 export { default as adobephotoshop } from "./About/icons/skills icons/adobephotoshop.svg";
 export { default as bootstrap } from "./About/icons/skills icons/bootstrap.svg";

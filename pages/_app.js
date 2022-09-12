@@ -1,10 +1,14 @@
 import Head from "next/head";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Footer, Header, ThemeFirstLayer } from "../components/layout";
 import "../styles/general/main.scss";
+import { Bars } from "react-loader-spinner";
+import { Logo } from "../assets";
 function MyApp({ Component, pageProps }) {
+  const [hidePreloader, setHidePreloader] = useState(true);
+
   useEffect(() => {
-    !(function () {
+    (function () {
       var e = {
           token: "+971521996785",
           position: "right",
@@ -29,6 +33,14 @@ function MyApp({ Component, pageProps }) {
       var n = document.getElementsByTagName("script")[0];
       n.parentNode.insertBefore(o, n);
     })();
+
+    const interval = setInterval(() => {
+      setHidePreloader(false);
+    }, 4000);
+    setInterval(() => {
+      clearInterval(interval);
+    }, 4000);
+    return () => clearInterval(interval);
   }, []);
   return (
     <>
@@ -36,6 +48,18 @@ function MyApp({ Component, pageProps }) {
         <title>Dawood Ahmed</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      {hidePreloader ? (
+        <div className="preloader-parent  w-100 ">
+          <img src={Logo.src} alt="img" className="preloader-logo mb-5 pb-4 " />
+          <Bars
+            type="Bars"
+            height="100"
+            width="50"
+            color="#00da5d"
+            ariaLabel="Loading"
+          />
+        </div>
+      ) : null}
       <ThemeFirstLayer />
       <div className="pages-parent mx-auto bg-transparent">
         <Header />

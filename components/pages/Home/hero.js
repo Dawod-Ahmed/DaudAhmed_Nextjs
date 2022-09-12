@@ -5,6 +5,7 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
+import Image from "next/image";
 
 const HeroSection = () => {
   const [hideWelcome, setHideWelcome] = useState("");
@@ -72,7 +73,12 @@ const HeroSection = () => {
               }}
             >
               <div className="right-img-part img-background">
-                <img src={DaudImg.src} alt="img" className="dev-img w-100 h-100" />
+                <Image 
+                src={DaudImg.src}
+                alt="Daud Ahmed"
+                layout="fill"
+                className="dev-img"
+                />
               </div>
             </MouseParallaxChild>
           </MouseParallaxContainer>

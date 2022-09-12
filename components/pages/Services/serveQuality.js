@@ -11,6 +11,7 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
+import Image from "next/image";
 
 const ServeQuality = () => {
   return (
@@ -50,23 +51,19 @@ const ServeQuality = () => {
                 height: "100%",
               }}
             >
-              <img
-                src={SelfServicesImage.src}
-                alt="img"
-                className="self-services-image"
-              />
+              <div className="self-services-image">
+                <Image src={SelfServicesImage.src} alt="img" layout="fill"/>
+              </div>
               <div className="serve-quality-icons-parent">
-                <img src={next.src} alt="" className="s-skill-icon s-next-icon" />
-                <img
-                  src={reactJs.src}
-                  alt=""
-                  className="s-skill-icon s-react-icon"
-                />
-                <img
-                  src={gatsbyjs.src}
-                  alt=""
-                  className="s-skill-icon s-gatsby-icon"
-                />
+                <div className="s-skill-icon s-next-icon">
+                  <Image src={next.src} alt="Next js" layout="fill" />
+                </div>
+                <div className="s-skill-icon s-react-icon">
+                  <Image src={reactJs.src} alt="React js" layout="fill"/>
+                </div>
+                <div className="s-skill-icon s-gatsby-icon">
+                  <Image src={gatsbyjs.src} alt="GAtsby js" layout="fill"/>
+                </div>
               </div>
             </MouseParallaxChild>
           </MouseParallaxContainer>

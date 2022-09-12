@@ -1,9 +1,16 @@
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import { ContactRightArrow } from "../../../assets";
+import {
+  ContactRightArrow,
+  SelfHireImage,
+} from "../../../assets";
 import { FormField } from "../../common";
 import axios from "axios";
 import Swal from "sweetalert2";
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from "react-parallax-mouse";
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
@@ -13,6 +20,11 @@ const SignupSchema = Yup.object().shape({
 });
 
 const ContactForm = () => {
+  const UpworkProfileCTA = () => {
+    // location.hre
+    window.location.href =
+      "https://www.upwork.com/freelancers/~01b5302c92f0a61e20";
+  };
   const verifyVideo = () => {
     Swal.fire({
       text: "Your Message is sent!,Thanks",
@@ -48,7 +60,47 @@ const ContactForm = () => {
           </div>
           <div className="background-text">Inquires</div>
         </div>
-
+        {/* <div className="card contact-right-form">
+          <MouseParallaxContainer
+            className="parallax"
+            containerStyles={{
+              width: "100%",
+              overflow: "visible",
+              gridTemplateColumns: "auto auto auto auto auto",
+            }}
+            resetOnLeave
+          >
+            <MouseParallaxChild
+              factorX={0.08}
+              factorY={0.06}
+              updateStyles={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "auto",
+                height: "100%",
+              }}
+            >
+              <img src={SelfHireImage.src} className="card-img-top" alt="img" />
+            </MouseParallaxChild>
+          </MouseParallaxContainer>
+          <div className="card-body">
+            <h5 className="card-title general-text ">Upwork</h5>
+            <p className="card-text general-text">
+              The world best freelancing marketplace to hire professional
+              freelancers.
+            </p>
+            <div className="hireme-cta-parent d-flex align-items-center justify-content-center py-3">
+              <p className="hireMe-text general-text mb-0 px-4">Hire me on</p>
+              <div
+                className="btn btn-primary hireme-cta"
+                onClick={UpworkProfileCTA}
+              >
+                {" "}
+              </div>
+            </div>
+          </div>
+        </div> */}
         <div className="contact-right-form">
           <Formik
             initialValues={{
