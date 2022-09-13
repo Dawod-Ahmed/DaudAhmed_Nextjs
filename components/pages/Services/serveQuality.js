@@ -5,8 +5,6 @@ import {
   portfolioDownArrow,
   SelfServicesImage,
 } from "../../../assets/";
-import animationData from "../../../assets/LottieFiles/Servicespage.json";
-import Animation from "../../common/animation";
 import {
   MouseParallaxChild,
   MouseParallaxContainer,
@@ -18,19 +16,6 @@ const ServeQuality = () => {
     <>
       <section className="serve-qulaity-section">
         <div className="serve-quality-left-part mb-5">
-          {/* <div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-              }}
-            >
-              <Animation src={animationData} />
-            </div>
-          </div> */}
           <MouseParallaxContainer
             className="parallax"
             containerStyles={{
@@ -52,17 +37,41 @@ const ServeQuality = () => {
               }}
             >
               <div className="self-services-image">
-                <Image src={SelfServicesImage.src} alt="img" layout="fill"/>
+                <Image
+                  src={SelfServicesImage.src}
+                  alt="img"
+                  layout="fill"
+                  placeholder="blur"
+                  blurDataURL={SelfServicesImage.src}
+                />
               </div>
               <div className="serve-quality-icons-parent">
                 <div className="s-skill-icon s-next-icon">
-                  <Image src={next.src} alt="Next js" layout="fill" />
+                  <Image
+                    src={next.src}
+                    alt="Next js"
+                    layout="fill"
+                    placeholder="blur"
+                    blurDataURL={next.src}
+                  />
                 </div>
                 <div className="s-skill-icon s-react-icon">
-                  <Image src={reactJs.src} alt="React js" layout="fill"/>
+                  <Image
+                    src={reactJs.src}
+                    alt="React js"
+                    layout="fill"
+                    placeholder="blur"
+                    blurDataURL={reactJs.src}
+                  />
                 </div>
                 <div className="s-skill-icon s-gatsby-icon">
-                  <Image src={gatsbyjs.src} alt="GAtsby js" layout="fill"/>
+                  <Image
+                    src={gatsbyjs.src}
+                    alt="GAtsby js"
+                    layout="fill"
+                    placeholder="blur"
+                    blurDataURL={gatsbyjs.src}
+                  />
                 </div>
               </div>
             </MouseParallaxChild>

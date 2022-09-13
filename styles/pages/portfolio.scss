@@ -1,669 +1,668 @@
 
 .portfolio-section {
-    z-index: 99;
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
+  z-index: 99;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.heading-parent {
+  @include FlexCenterRow();
+  @include GeneralbackgroundImage(
+    "../../assets/Portfolio/PortfolioBackground.png",
+    "../../assets/Portfolio/PortfolioBackground.png",
+    120% 100%,
+    center center
+  );
+  // background-image: url(../assets/Portfolio/PortfolioBackground.png)
+  @include elementSize(100%, 400px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+
+.heading-parent-child {
+  @include flexColumn(flex-flex-start, center);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.portfolio-heading-parent {
+  @include flexCenterColumn();
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.portfolio-heading-detail {
+  @include generalText(2.2rem);
+  @include elementSize(950px, auto);
+  text-align: center;
+
+
+  @include desktop() {
+          width: 850px;
+
+  }
+
+
+
+  @include laptop() {
+          width: 720px;
+
+      
+      
+  }
+
+
+  @include tablet() {
+          width: 520px;
+
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+
+      
+  }
+
+  @include mobile() {
+                width: auto;
+
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.projects-section {
+  background-color: $main-background-color;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.project-parent {
+  @include flexRow(space-between, center);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+          flex-wrap: wrap;
+justify-content: center;
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+
+.second-opposite-element{
     @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+            flex-wrap: wrap-reverse;
+
+
+      
   }
-  .heading-parent {
-    @include FlexCenterRow();
-    @include GeneralbackgroundImage(
-      "../../assets/Portfolio/PortfolioBackground.png",
-      "../../assets/Portfolio/PortfolioBackground.png",
-      120% 100%,
-      center center
-    );
-    // background-image: url(../assets/Portfolio/PortfolioBackground.png)
-    @include elementSize(100%, 400px);
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+}
+
+
+
+.project-img-parent {
+  @include elementSize(48%, 100%);
+  position: relative;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  border-radius: 20px;
+
+
+  @include desktop() {
   }
-  
-  .heading-parent-child {
-    @include flexColumn(flex-flex-start, center);
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+
+
+  @include laptop() {
+      
+      
   }
-  .portfolio-heading-parent {
-    @include flexCenterColumn();
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+
+  @include tablet() {
+      @include elementSize(unset!important, unset!important);
+
+      
   }
-  .portfolio-heading-detail {
-    @include generalText(2.2rem);
-    @include elementSize(950px, auto);
-    text-align: center;
-  
-  
-    @include desktop() {
-            width: 850px;
-  
-    }
-  
-  
-  
-    @include laptop() {
-            width: 720px;
-  
-        
-        
-    }
-  
-  
-    @include tablet() {
-            width: 520px;
-  
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-  
-        
-    }
-  
-    @include mobile() {
-                  width: auto;
-  
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+  @include largeWidthSizeMobiles() {
+      
   }
-  .projects-section {
-    background-color: $main-background-color;
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+  @include mobile() {
+      
+      
   }
-  .project-parent {
-    @include flexRow(space-between, center);
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-            flex-wrap: wrap;
-  justify-content: center;
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+ @include customSmallBp() {
+      
+      
   }
-  
-  .second-opposite-element{
-      @include tablet() {
-              flex-wrap: wrap-reverse;
-  
-  
-        
-    }
+
+}
+
+.project-img {
+  @include elementSize(100%, 360px);
+  border-radius: 20px;
+
+
+  @include desktop() {
+    height: 360px;
+
   }
-  
-  
-  
-  .project-img-parent {
-    @include elementSize(48%, auto);
-    position: relative;
-    transition-duration: 0.5s;
-    overflow: hidden;
-    border-radius: 20px;
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        @include elementSize(unset!important, unset!important);
-  
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+
+
+  @include laptop() {
+      
+    height: 360px;
+      
   }
-  
-  .project-img {
-    @include elementSize(100%, 100%);
-    border-radius: 20px;
-  
-  
-    @include desktop() {
-      height: 360px;
-  
-    }
-  
-  
-  
-    @include laptop() {
-        
-      height: 360px;
-        
-    }
-  
-  
-    @include tablet() {
-         width: 600px;
-         height: 300px;
-  
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-            width: 500px;
-            height: 380px;
-  
-    }
-  
-    @include mobile() {
-      width: 480px;
-      height: 300px;
-  
-        
-    }
-   @include customSmallBp() {
-    width: unset;
-   height: 235px;
-        
-        
-    }
-  
+
+
+  @include tablet() {
+       width: 600px;
+       height: 300px;
+
+      
   }
-  
-  .project-img-text {
-    display: none;
-    transition-duration: 0.5s;
-    transition-property: margin-top;
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+  @include largeWidthSizeMobiles() {
+          width: 500px;
+          height: 380px;
+
   }
-  
-  .project-img-parent:hover {
-    background-color: black;
-    opacity: 0.5;
-  
-    transition-duration: 0.5s;
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+  @include mobile() {
+    width: 480px;
+    height: 300px;
+
+      
   }
-  
-  .project-img-parent:hover:hover .project-img {
-    transform: scale(1.2);
-    transition-duration: 2.5s;
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+ @include customSmallBp() {
+ height: 235px;
+      
+      
   }
-  
-  .project-img-parent:hover .project-img-text {
-    display: block;
-    bottom: 60%;
-    transition-duration: 0.5s;
-    transition-property: top;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+}
+
+.project-img-text {
+  display: none;
+  transition-duration: 0.5s;
+  transition-property: margin-top;
+
+
+  @include desktop() {
   }
-  
-  .projet-detail-parent {
-    @include elementSize(48%, 240px);
-    @include flexColumn(center, flex-start);
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        width: 600px;
-      height: auto;
-    }
-  
-    @include largeWidthSizeMobiles() {
-            width: 500px;
-  
-    }
-  
-    @include mobile() {
-            width: auto;
-  
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+
+
+  @include laptop() {
+      
+      
   }
-  .project-name-first {
-    @include generalHeading(35px);
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        font-size: 2.6rem;
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+
+  @include tablet() {
+      
   }
-  .project-name-second {
-    @include generalHeadingOne(35px);
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        font-size: 2.6rem
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+  @include largeWidthSizeMobiles() {
+      
   }
-  .project-details {
-    @include generalText(22px);
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+
+  @include mobile() {
+      
+      
   }
-  .btn-parent {
-    @include FlexCenterRow();
-  
-  
-    @include desktop() {
-    }
-  
-  
-  
-    @include laptop() {
-        
-        
-    }
-  
-  
-    @include tablet() {
-        
-    }
-  
-    @include largeWidthSizeMobiles() {
-        
-    }
-  
-    @include mobile() {
-        
-        
-    }
-   @include customSmallBp() {
-        
-        
-    }
-  
+ @include customSmallBp() {
+      
+      
   }
+
+}
+
+.project-img-parent:hover {
+  background-color: black;
+  opacity: 0.5;
+
+  transition-duration: 0.5s;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+
+.project-img-parent:hover:hover .project-img {
+  transform: scale(1.2);
+  transition-duration: 2.5s;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+
+.project-img-parent:hover .project-img-text {
+  display: block;
+  bottom: 60%;
+  transition-duration: 0.5s;
+  transition-property: top;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+
+.projet-detail-parent {
+  @include elementSize(48%, 240px);
+  @include flexColumn(center, flex-start);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      width: 600px;
+    height: auto;
+  }
+
+  @include largeWidthSizeMobiles() {
+          width: 500px;
+
+  }
+
+  @include mobile() {
+          width: auto;
+
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.project-name-first {
+  @include generalHeading(35px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      font-size: 2.6rem;
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.project-name-second {
+  @include generalHeadingOne(35px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      font-size: 2.6rem
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.project-details {
+  @include generalText(22px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.btn-parent {
+  @include FlexCenterRow();
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}

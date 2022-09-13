@@ -78,6 +78,8 @@ const HeroSection = () => {
                 alt="Daud Ahmed"
                 layout="fill"
                 className="dev-img"
+                placeholder="blur"
+                blurDataURL={DaudImg.src}
                 />
               </div>
             </MouseParallaxChild>

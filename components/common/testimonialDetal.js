@@ -13,13 +13,13 @@ const TestimonialComp = (props) => {
   return (
     <>
       <div className="testimonial-image d-block w-100 mx-auto mx-sm-0 position-realtive">
-        <Image src={personImage.src} layout="fill" />
+        <Image
+          src={personImage.src}
+          layout="fill"
+          placeholder="blur"
+          blurDataURL={personImage.src}
+        />
       </div>
-      {/* <img
-        src={}
-        className="testimonial-image d-block w-100 mx-auto mx-sm-0"
-        alt="img"
-      /> */}
       <div className="carousel-caption d-none d-md-block ">
         <img src={commaTop.src} alt="img" className="comma commaUp" />
         <div className="star-parent d-flex py-3">

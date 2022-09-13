@@ -6,8 +6,6 @@ import {
 } from "react-parallax-mouse";
 import {
   AboutBackImg,
-  AboutDaud,
-  AboutImageShadow,
   AboutDaudUpdated,
 } from "../../../assets";
 
@@ -44,11 +42,13 @@ const AboutMeSection = () => {
               >
                 <div className="position-relative aboutSelfImage">
                   <Image
-                    src={AboutDaudUpdated}
+                    src={AboutDaudUpdated.src}
                     alt="Day Ahmed"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="left top"
+                    placeholder="blur"
+                    blurDataURL={AboutDaudUpdated.src}
                   />
                 </div>
               </MouseParallaxChild>
