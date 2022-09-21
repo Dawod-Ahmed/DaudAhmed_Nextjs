@@ -10,7 +10,8 @@ const VideoSection = () => {
         channel="youtube"
         autoplay={1}
         isOpen={isOpen}
-        videoId="LXb3EKWsInQ"
+        videoId="WxwxFyl14AU"
+        
         onClose={() => setOpen(false)}
       />
       <section className={`video-section w-100 `}>
@@ -20,6 +21,12 @@ const VideoSection = () => {
           onClick={() => setOpen(true)}
         ></button>
       </section>
+      <style global jsx>{`
+       body .bh-widget-page-wrapper {
+          display: ${isOpen ? "none!important" : " block!important "};
+        }
+      `}</style>
+
     </>
   );
 };

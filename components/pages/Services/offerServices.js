@@ -21,28 +21,20 @@ const OfferServices = () => {
           </Link>
         </div>
         <div className="services-carsds-parent">
-          <CardComponent
-            className="services-card  cards-parent   d-flex flex-column justify-content-start  align-items-center my-5 my-lg-3  mx-sm-5 mx-lg-4"
-            cardImageClassname="bugs-fixer-img"
-            title="Bugs"
-            title1="Fixing"
-            para="I design the modern, Unique Web UI/UX design with consumable content to engage the website visitor for your business."
-            projects="20"
-          />
-          <CardComponent
+        <CardComponent
             className="services-card  cards-parent   d-flex flex-column justify-content-start  align-items-center my-5 my-lg-3  mx-sm-5 mx-lg-4"
             cardImageClassname="ui-ux-design-img"
             title="UI/UX"
             title1="Design"
-            para="I develop the maintainable, responsive, bug-free, and pixel-perfect front-end of the website and & web application."
+            para="I design the modern, Unique Web UI/UX design with consumable content to engage the website visitor for your business."
             projects="20"
           />
-          <CardComponent
+           <CardComponent
             className="services-card  cards-parent   d-flex flex-column justify-content-start  align-items-center my-5 my-lg-3  mx-sm-5 mx-lg-4"
             cardImageClassname="front-end-design-img"
             title="Front-End"
             title1="Development"
-            para="I build a complete web application solution with the latest & innovative technologies to maintain the performance of web applications."
+            para="I develop the maintainable, responsive, bug-free, and pixel-perfect front-end of the website and & web application."
             projects="20"
           />
           <CardComponent
@@ -50,9 +42,19 @@ const OfferServices = () => {
             cardImageClassname="full-stack-design-img"
             title="Full-Stack"
             title1="Development"
+            para="I build a complete web application solution with the latest & innovative technologies to maintain the performance of web applications. "
+            projects="20"
+          />
+          <CardComponent
+            className="services-card  cards-parent   d-flex flex-column justify-content-start  align-items-center my-5 my-lg-3  mx-sm-5 mx-lg-4"
+            cardImageClassname="bugs-fixer-img"
+            title="Bugs"
+            title1="Fixing"
             para="Being an experiennced web developer, I also fix existing website and web application bugs/errors,its does not matter bug is normal or complex."
             projects="20"
           />
+       
+         
         </div>
       </section>
     </>

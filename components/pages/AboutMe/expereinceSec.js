@@ -22,7 +22,7 @@ const ExperienceSection = () => {
             location={"2020-2023"}
             detail={"Web Design & Development"}
             duration={
-              "I completed the best web development courses made by Code with Mosh, Code with Harry, and Thapa Technical, as well as many other valuable lectures from the official documentation. I am also updating my skills regularly to compete and meet new demands."
+              "I completed the best web development courses made by Code with Mosh, Code with Harry, and Thapa Technical, as well as many other valuable online lectures and from the official documentation. I am also updating my skills regularly to compete and meet new demands."
             }
           />
           <ExperienceCard

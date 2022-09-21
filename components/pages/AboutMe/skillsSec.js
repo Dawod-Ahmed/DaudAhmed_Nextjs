@@ -17,10 +17,21 @@ import {
   firebase,
   mongoDb,
   nodejs,
+  mysql,
+  wordpress,
+  php
 } from "../../../assets";
 import { SkillsComponent } from "../../common";
 const SkillsSection = () => {
   const [skillsData] = useState([
+    {
+      image: wordpress,
+      className: "wordpress",
+      imageName: "WordPress",
+      tooltipTitle: "WordPress",
+      tooltipDetail:
+        "WordPress is a content management system (CMS) that allows you to host and build websites.",
+    },
     {
       image: reactJs,
       className: "reactJs",
@@ -111,6 +122,22 @@ const SkillsSection = () => {
       tooltipTitle: "Npm",
       tooltipDetail:
         "Npm is probably the most popular package manager for JavaScript.",
+    },
+    {
+      image: mysql,
+      className: "mysql",
+      imageName: "My SQL",
+      tooltipTitle: "My SQL",
+      tooltipDetail:
+        "MySQL creates a database for storing and manipulating data, defining the relationship of each table.",
+    },
+    {
+      image: php,
+      className: "php",
+      imageName: "PHP",
+      tooltipTitle: "PHP",
+      tooltipDetail:
+        "MySQL creates a database for storing and manipulating data, defining the relationship of each table.",
     },
     {
       image: firebase,

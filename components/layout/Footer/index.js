@@ -16,18 +16,24 @@ const Footer = () => {
     window.addEventListener("scroll", function () {
       var scroll = document.querySelector(".scrollBar-Top");
       scroll.classList.toggle("active-scrollToTop", window.scrollY > 250);
+      // var wtsp = document.querySelectorAll(".bh-widget-page-wrapper");
+      // wtsp.classList.toggle("invisible", window.scrollY > 250);
+
+      
     });
     return () => {
       window.removeEventListener("scroll", function () {
         var scroll = document.querySelector(".scrollBar-Top");
         scroll.classList.toggle("active-scrollToTop", window.scrollY > 250);
+        // var wtsp = document.querySelectorAll(".bh-widget-page-wrapper");
+        // wtsp.classList.toggle("invisible", window.scrollY > 250);
       });
     };
   }, []);
 
   return (
     <>
-      <footer className="d-flex flex-column  align-items-center justify-content-center footer w-100 mx-auto mt-0 py-5 ">
+      <footer className=" d-flex flex-column  align-items-center justify-content-center footer w-100 mx-auto mt-0 py-5 ">
         <span className="created-text mb-1">Designed and developed by</span>
         <h1 className="website-creator text-white">
           Dawood<span className="footer-slash mx-1">/</span>A

@@ -1,5 +1,10 @@
 import { useState } from "react";
+// import ModalVideo from "react-modal-video";
+ 
 import {
+
+  portfolio,
+  project01,
   project1,
   project2,
   project3,
@@ -8,9 +13,33 @@ import {
   project6,
   project7,
 } from "../../../assets";
+ 
 import { ProjectComponent } from "../../common";
 const ProjectsSection = () => {
+  // const [isOpen, setOpen] = useState(false);
+//  const openModalFun=(value)=> {
+// if(value){
+//  console.log("Testing---1",value);
+// }
+
+//  }
   const [projectData] = useState([
+    {
+      image: portfolio,
+      title1: "Personal ",
+      title2: "Portfolio",
+      projectDetails:
+        "My Personal Portfolio website developed in Next.Js.This is designed with completely custom UI/UX web design.",
+      liveLink: "https://daudahmed.com/",
+    },
+    {
+      image: project01,
+      title1: "RFG ",
+      title2: "Logistics",
+      projectDetails:
+        "A Logistics company based in Dubai, UAE. Who is providing the Door-Door Logistics solutions in GCC countries",
+      liveLink: "https://rfgroup.ae/",
+    },
     {
       image: project1,
       title1: "BroadBand ",
@@ -33,7 +62,7 @@ const ProjectsSection = () => {
       title2: "App",
       projectDetails:
         "A International news web app and with the feature of specific countries lastest news  and developed in React.Js.",
-      liveLink: "https://youtu.be/DlEDOT3CJaE",
+      liveLink: "newsapp",
     },
     {
       image: project4,
@@ -70,8 +99,12 @@ const ProjectsSection = () => {
     },
   ]);
 
+
   return (
     <>
+     
+ 
+
       <section className="projects-section mt-5">
         {projectData.map((value, index) => {
           return (
@@ -83,10 +116,12 @@ const ProjectsSection = () => {
               projectDetails={value.projectDetails}
               leftImage={index % 2 === 0 ? true : false}
               liveLink={value.liveLink}
+            
             />
           );
         })}
       </section>
+      
     </>
   );
 };

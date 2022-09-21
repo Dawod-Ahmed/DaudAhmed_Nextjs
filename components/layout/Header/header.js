@@ -74,7 +74,13 @@ const HeaderComp = () => {
           </ul>
         </menu>
       </header>
+      <style global jsx>{`
+       body .bh-widget-page-wrapper {
+          display: ${navExp ? "none!important" : " block!important "};
+        }
+      `}</style>
     </>
+    
   );
 };
 

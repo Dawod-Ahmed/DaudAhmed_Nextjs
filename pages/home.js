@@ -16,7 +16,7 @@ const Home = () => {
         <HeroSection />
         <ShortIntroSection />
         <HomeCardsSection />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
       </main>
     </>
   );

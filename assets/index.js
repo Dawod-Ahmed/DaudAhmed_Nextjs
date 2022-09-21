@@ -37,6 +37,7 @@ export { default as CommaDown } from "./Home/Icons/CommaDown.svg";
 export { default as PreIcon } from "./Home/Icons/preIcon.svg";
 export { default as NextIcon } from "./Home/Icons/nexticon.svg";
 
+
 // ------  About Page  -------
 
 export { default as AboutImageShadow } from "./About/aboutSelfShadow.png";
@@ -61,7 +62,9 @@ export { default as sass } from "./About/icons/skills icons/sass.svg";
 export { default as firebase } from "./About/icons/skills icons/firebase.svg";
 export { default as mongoDb } from "./About/icons/skills icons/mongodb.png";
 export { default as nodejs } from "./About/icons/skills icons/nodejs.png";
-
+export { default as mysql } from "./About/icons/skills icons/mysql.png";
+export { default as php } from "./About/icons/skills icons/php.png";
+export { default as wordpress } from "./About/icons/skills icons/wordpress.png";
 // ------  Services Page  -------
 
 export { default as SelfServicesImage } from "./Services/SelfServicesImage.png";
@@ -73,6 +76,8 @@ export { default as FreelancingImage } from "./Services/freelancing.png";
 
 export { default as portfolioBackground } from "./Portfolio/PortfolioBackground.png";
 export { default as portfolioDownArrow } from "./Portfolio/portfolioDownArrow.svg";
+export { default as portfolio } from "./Portfolio/portfolio.png";
+export { default as project01 } from "./Portfolio/project01.png";
 export { default as project1 } from "./Portfolio/project1.png";
 export { default as project2 } from "./Portfolio/project2.png";
 export { default as project3 } from "./Portfolio/project3.png";

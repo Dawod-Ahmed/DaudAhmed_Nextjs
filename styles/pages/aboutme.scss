@@ -1,3 +1,6 @@
+
+@import "../../node_modules/react-modal-video/scss/modal-video.scss";
+
 .tooltip {
   display: inline-block;
   position: relative;
@@ -159,7 +162,7 @@ body .modal-backdrop {
 .video-section {
   @include FlexCenterRow;
   height: 700px;
-  background-image: url(../../assets/About/AboutBackImg.jpg);
+  background-image: url(../../assets/About/AboutBackImg.png);
   background-repeat: no-repeat;
   background-size: 100% 100% !important;
 
@@ -551,7 +554,7 @@ button:before {
   }
 
   @include laptop() {
-    @include elementSize(410px, 360px);
+    @include elementSize(410px, 380px);
   }
 
   @include tablet() {

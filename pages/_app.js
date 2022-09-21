@@ -10,16 +10,16 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     (function () {
       var e = {
-          token: "+971521996785",
+          token: "+971505758168",
           position: "right",
           bottomSpacing: "30",
           callToActionMessage: "Start Chat",
           displayOn: "everywhere",
           subtitle: "Typically replies in 30 minutes",
           message: {
-            name: "Web Sols",
+            name: "Daud Ahmed",
             content:
-              "We are pleased to help you out!\nPlease start chat,\n we are online 24/7 and reply you in less than 30 minutes!",
+              "I am pleased to help you out!\nPlease start chat,\n I am available 24/7 and reply you in less than 30 minutes!",
           },
         },
         t = document.location.protocol + "//bothelp.io",
@@ -36,10 +36,10 @@ function MyApp({ Component, pageProps }) {
 
     const interval = setInterval(() => {
       setHidePreloader(false);
-    }, 4000);
+    }, 2200);
     setInterval(() => {
       clearInterval(interval);
-    }, 4000);
+    }, 2200);
     return () => clearInterval(interval);
   }, []);
   return (
@@ -66,6 +66,11 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer />
       </div>
+      <style global jsx>{`
+       body .bh-widget-page-wrapper {
+          display: ${hidePreloader ? "none!important" : " block!important "};
+        }
+      `}</style>
     </>
   );
 }

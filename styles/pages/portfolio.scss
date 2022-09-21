@@ -349,7 +349,10 @@ justify-content: center;
   }
 
 }
-
+.project-img span img{
+  object-fit: unset!important;
+   object-position: unset!important;
+}
 .project-img-text {
   display: none;
   transition-duration: 0.5s;

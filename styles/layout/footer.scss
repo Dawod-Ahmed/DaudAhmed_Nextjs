@@ -27,6 +27,8 @@
   }
 }
 .website-creator {
+  font-size: 3.4rem;
+
   @include desktop() {
   }
 
@@ -37,7 +39,7 @@
   }
 
   @include largeWidthSizeMobiles() {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
   @include mobile() {
@@ -62,7 +64,7 @@
 .created-text {
   color: $theme-green-color;
   font-weight: bold;
-
+  font-size: 2rem;
   @include desktop() {
   }
 

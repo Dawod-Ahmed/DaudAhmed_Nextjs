@@ -17,7 +17,7 @@ const Freelancing = () => {
           </h1>
           <p className="general-text freelancing-para pt-3 pb-5">
             I am also working as a Full-Time freelancer,So I am available almost
-            all time and you can send my you quote at any time!
+            all time and you can send quote at any time!
           </p>
           <Link href="/contact">
             <a className="btn freelancin-btn">Contact Me</a>

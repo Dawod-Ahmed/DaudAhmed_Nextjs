@@ -578,11 +578,11 @@ div .cards-parent {
 // -------------  Testinmonials section ----------------------
 
 .testimonials-section {
-  padding-bottom: 170px;
+  padding-bottom: 80px;
 
   @include laptop() {
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
 
   @include tablet() {
@@ -781,12 +781,22 @@ div .carousel-indicators {
 
 .scroll-events-parent {
   position: absolute;
-  bottom: -110px;
+  bottom: -60px;
   @include flexColumn(unset, center);
 
   @include laptop() {
-    bottom: -70px;
+    bottom: -120px;
   }
+
+  @include largeWidthSizeMobiles() {
+    bottom: -85px;
+    
+  }
+  @include customSmallBp() {
+    bottom: -80px;
+     
+  }
+
 }
 
 .carousel-control-prev-icon {

@@ -9,7 +9,7 @@ const aboutMe = () => {
         <title>About | Dawood Ahmed</title>
       </Head>
       <main className="w-100 d-flex-direction about-main pt-0">
-        {/* <VideoSection /> */}
+        <VideoSection />
         <AboutMeSection />
         <ExperienceSection />
         <SkillsSection />
