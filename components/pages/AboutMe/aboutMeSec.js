@@ -57,7 +57,7 @@ const AboutMeSection = () => {
           <div className="about-right-part-updated w-100">
             <h1 className="about-heading">
               <span className=" heading-first">About</span>
-              <span className=" heading-second"> me</span>
+              <span className=" heading-second"> Me</span>
             </h1>
             <p className="about-para general-text">
               I started my software development journey at the start of 2018.

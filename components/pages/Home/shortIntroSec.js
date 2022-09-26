@@ -11,7 +11,7 @@ const ShortIntroSection = () => {
           <div className="query-txt-parent">
             <div className="query-type-text">
               <p className="problem-solver-txt mt-1 mb-0 d-none d-lg-block">
-                {`</>`} PROBLEM SOVER
+                {`</>`} PROBLEM SOLVER
               </p>{" "}
               <br />
               Any Type Of Query <br />& Discussion.
@@ -34,7 +34,7 @@ const ShortIntroSection = () => {
             <div className="exp1  d-flex justify-content-center justify-content-sm-between align-items-center pb-5 pb-sm-0">
               <span className="exp-digit">2.5+</span>
               <span className="exp-txt">
-                Years n <br />
+                Years In <br />
                 Web Development.
               </span>
             </div>
