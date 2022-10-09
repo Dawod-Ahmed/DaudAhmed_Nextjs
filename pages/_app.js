@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     (function () {
       var e = {
-          token: "+971505758168",
+          token: " +971505758168",
           position: "right",
           bottomSpacing: "30",
           callToActionMessage: "Start Chat",
@@ -48,14 +48,7 @@ function MyApp({ Component, pageProps }) {
 
         <title>Dawood Ahmed</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-     
-     
-     
-     
-     
-        
-
-        <meta property="og:url" content="DaudAhmed.com" />
+       <meta property="og:url" content="DaudAhmed.com" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="3046156625634767" />
         <meta
