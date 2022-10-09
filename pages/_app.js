@@ -45,8 +45,30 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+
         <title>Dawood Ahmed</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+     
+     
+     
+     
+        
+
+        <meta property="og:url" content="DaudAhmed.com" />
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="3046156625634767" />
+        <meta
+          property="og:title"
+          content="Daud Ahmed"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:description"
+          content="5+ Years Expert Web & Software Developer"
+        />
+        <meta property="og:image" content={"https://iili.io/Q455wN.png"} />
+
       </Head>
       {hidePreloader ? (
         <div className="preloader-parent  w-100 ">
